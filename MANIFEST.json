@@ -118,6 +118,26 @@
     "data/dalil_sources.json": {
       "bytes": 3711,
       "sha256": "a1b9f75d4fd80d55bad59333322ea47da008051dc78f5e60d04129c5ffc4046f"
+    },
+    "data/qiyas_istilahat.json": {
+      "bytes": 4006,
+      "sha256": "55c34c739a7e2df389439ac0df01b7f622983e6794700b3de5fc1722c67e7144"
+    },
+    "data/qiyas_golden.json": {
+      "bytes": 2881,
+      "sha256": "f587e52144aa42d029d8a87c1b79f3639f339870aaad895eefc482345335c68d"
+    },
+    "tests/test_qiyas.py": {
+      "bytes": 2279,
+      "sha256": "19d1c0d9ddc413cf5bf14fd828b4be7565fbe894ab58cc02bdd9b7c9f185d929"
+    },
+    "data/jurjani_nadhm.json": {
+      "bytes": 6082,
+      "sha256": "93d6708df1e57ba4bdbcbaad1953862a7fbfd0ad4c9ffe2e44a3ba8f4a03f331"
+    },
+    "tests/test_jurjani.py": {
+      "bytes": 2250,
+      "sha256": "664fac03fbd729c9ca5772785f5c2e09ad35a7afcf5c1ec8fc33a74522fe14b7"
     }
   }
 }

@@ -138,6 +138,30 @@
     "tests/test_jurjani.py": {
       "bytes": 2250,
       "sha256": "664fac03fbd729c9ca5772785f5c2e09ad35a7afcf5c1ec8fc33a74522fe14b7"
+    },
+    "tools/measure_nadhm.py": {
+      "bytes": 2786,
+      "sha256": "1564d7a245fe02ef7ffc0f5a42bb75cdbd104f4ef91caf48b18c351b39c3b6da"
+    },
+    "data/nadhm_stats.json": {
+      "bytes": 1062,
+      "sha256": "a827c1723c33de5447ac5c1f5c33598878c9620ddcadb64b0fc20b726a24729f"
+    },
+    "data/masaq_schema.json": {
+      "bytes": 1628,
+      "sha256": "18a317554fbe0aa11f3c437479aca71d88235067638822a24a6a9a064d27e276"
+    },
+    "tests/test_nadhm.py": {
+      "bytes": 2373,
+      "sha256": "8d0e4ba89c57997bcfbca727feb681597d722459c574740115327ba143a91abe"
+    },
+    "data/lazum_istilahat.json": {
+      "bytes": 5000,
+      "sha256": "2913e2dcc8851d0dce2660969fd4932e1a2345f2f7af03cb10679b2512fc976c"
+    },
+    "tests/test_lazum.py": {
+      "bytes": 2620,
+      "sha256": "7ffb90d542989eb6967896d96d10ce577a616b985f78094bff4283f8e519c504"
     }
   }
 }

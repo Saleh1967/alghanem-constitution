@@ -1,0 +1,178 @@
+{
+  "generated": "2026-10-06",
+  "repo": "alghanem-constitution",
+  "policy": "لا يدخل إلا بت ولا يخرج إلا بت — عبر حزمة slge المعتمدة وحدها",
+  "whitelisted_io": [
+    "tools/verify_repo.py"
+  ],
+  "entries": [
+    {
+      "path": "src/slge/slge.py",
+      "moved_to": "suspended/src__slge__slge.py",
+      "reason": "نسخة SLGE قديمة منسوخة — معيبة (هي/إن تنهاران، الألف الخنجرية تسقط)؛ المصدر الوحيد المعتمد هو حزمة slge المثبتة",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "بوابة الحزمة + ADR + توقعات مطعومة"
+    },
+    {
+      "path": "src/slge/slge_laws.py",
+      "moved_to": "suspended/src__slge__slge_laws.py",
+      "reason": "نسخة SLGE قديمة منسوخة — معيبة (هي/إن تنهاران، الألف الخنجرية تسقط)؛ المصدر الوحيد المعتمد هو حزمة slge المثبتة",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "بوابة الحزمة + ADR + توقعات مطعومة"
+    },
+    {
+      "path": "src/slge/slge_layers.py",
+      "moved_to": "suspended/src__slge__slge_layers.py",
+      "reason": "نسخة SLGE قديمة منسوخة — معيبة (هي/إن تنهاران، الألف الخنجرية تسقط)؛ المصدر الوحيد المعتمد هو حزمة slge المثبتة",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "بوابة الحزمة + ADR + توقعات مطعومة"
+    },
+    {
+      "path": "src/slge/slge_order.py",
+      "moved_to": "suspended/src__slge__slge_order.py",
+      "reason": "نسخة SLGE قديمة منسوخة — معيبة (هي/إن تنهاران، الألف الخنجرية تسقط)؛ المصدر الوحيد المعتمد هو حزمة slge المثبتة",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "بوابة الحزمة + ADR + توقعات مطعومة"
+    },
+    {
+      "path": "src/slge/slge_phon.py",
+      "moved_to": "suspended/src__slge__slge_phon.py",
+      "reason": "نسخة SLGE قديمة منسوخة — معيبة (هي/إن تنهاران، الألف الخنجرية تسقط)؛ المصدر الوحيد المعتمد هو حزمة slge المثبتة",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "بوابة الحزمة + ADR + توقعات مطعومة"
+    },
+    {
+      "path": "src/slge/slge_reverse.py",
+      "moved_to": "suspended/src__slge__slge_reverse.py",
+      "reason": "نسخة SLGE قديمة منسوخة — معيبة (هي/إن تنهاران، الألف الخنجرية تسقط)؛ المصدر الوحيد المعتمد هو حزمة slge المثبتة",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "بوابة الحزمة + ADR + توقعات مطعومة"
+    },
+    {
+      "path": "src/slge/slge_unicode.py",
+      "moved_to": "suspended/src__slge__slge_unicode.py",
+      "reason": "نسخة SLGE قديمة منسوخة — معيبة (هي/إن تنهاران، الألف الخنجرية تسقط)؛ المصدر الوحيد المعتمد هو حزمة slge المثبتة",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "بوابة الحزمة + ADR + توقعات مطعومة"
+    },
+    {
+      "path": "src/slge/slge_wazun.py",
+      "moved_to": "suspended/src__slge__slge_wazun.py",
+      "reason": "نسخة SLGE قديمة منسوخة — معيبة (هي/إن تنهاران، الألف الخنجرية تسقط)؛ المصدر الوحيد المعتمد هو حزمة slge المثبتة",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "بوابة الحزمة + ADR + توقعات مطعومة"
+    },
+    {
+      "path": "src/slge/algebra116.py",
+      "moved_to": "suspended/src__slge__algebra116.py",
+      "reason": "نسخة SLGE قديمة منسوخة — معيبة (هي/إن تنهاران، الألف الخنجرية تسقط)؛ المصدر الوحيد المعتمد هو حزمة slge المثبتة",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "بوابة الحزمة + ADR + توقعات مطعومة"
+    },
+    {
+      "path": "src/slge/slge_forms.py",
+      "moved_to": "suspended/src__slge__slge_forms.py",
+      "reason": "نظير بايثون مؤقت؛ يُستبدل بنظير المطابق لـLean في الحزمة",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "بوابة الحزمة + ADR + توقعات مطعومة"
+    },
+    {
+      "path": "tools/measure_nadhm.py",
+      "moved_to": "suspended/tools__measure_nadhm.py",
+      "reason": "محوّل نص يقرأ/يكتب مباشرة؛ يعود متغذيًا من بتّات البوابة فقط",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "بوابة الحزمة + ADR + توقعات مطعومة"
+    },
+    {
+      "path": "tools/propose_rules.py",
+      "moved_to": "suspended/tools__propose_rules.py",
+      "reason": "محوّل نص يقرأ/يكتب مباشرة؛ يعود متغذيًا من بتّات البوابة فقط",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "بوابة الحزمة + ADR + توقعات مطعومة"
+    },
+    {
+      "path": "tools/learning_loop.py",
+      "moved_to": "suspended/tools__learning_loop.py",
+      "reason": "محوّل نص يقرأ/يكتب مباشرة؛ يعود متغذيًا من بتّات البوابة فقط",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "بوابة الحزمة + ADR + توقعات مطعومة"
+    },
+    {
+      "path": "tools/verify_quotes.py",
+      "moved_to": "suspended/tools__verify_quotes.py",
+      "reason": "بوابة نصية؛ تعود عبر مدخلات مودعة بتات+شهادة",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "بوابة الحزمة + ADR + توقعات مطعومة"
+    },
+    {
+      "path": "data/sources",
+      "moved_to": "suspended/data__sources",
+      "reason": "نصوص مصادر خام؛ تُعاد إيداعها عبر البوابة",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "بوابة الحزمة + ADR + توقعات مطعومة"
+    },
+    {
+      "path": "tests/test_slge.py",
+      "moved_to": "suspended/tests__test_slge.py",
+      "reason": "يعتمد على وحدات معلقة أو قراءة بيانات مباشرة",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "عودة وحداته عبر البوابة"
+    },
+    {
+      "path": "tests/test_jurjani.py",
+      "moved_to": "suspended/tests__test_jurjani.py",
+      "reason": "يعتمد على وحدات معلقة أو قراءة بيانات مباشرة",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "عودة وحداته عبر البوابة"
+    },
+    {
+      "path": "tests/test_lazum.py",
+      "moved_to": "suspended/tests__test_lazum.py",
+      "reason": "يعتمد على وحدات معلقة أو قراءة بيانات مباشرة",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "عودة وحداته عبر البوابة"
+    },
+    {
+      "path": "tests/test_qiyas.py",
+      "moved_to": "suspended/tests__test_qiyas.py",
+      "reason": "يعتمد على وحدات معلقة أو قراءة بيانات مباشرة",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "عودة وحداته عبر البوابة"
+    },
+    {
+      "path": "tests/test_nadhm.py",
+      "moved_to": "suspended/tests__test_nadhm.py",
+      "reason": "يعتمد على وحدات معلقة أو قراءة بيانات مباشرة",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "عودة وحداته عبر البوابة"
+    },
+    {
+      "path": "tests/test_proposer.py",
+      "moved_to": "suspended/tests__test_proposer.py",
+      "reason": "يعتمد على وحدات معلقة أو قراءة بيانات مباشرة",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "عودة وحداته عبر البوابة"
+    },
+    {
+      "path": "legacy/check_codebooks.py",
+      "moved_to": "suspended/legacy__check_codebooks.py",
+      "reason": "أداة فحص جداول legacy تقرأ ملفات",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "بوابة الحزمة + ADR + توقعات مطعومة"
+    },
+    {
+      "path": "legacy/seg.py",
+      "moved_to": "suspended/legacy__seg.py",
+      "reason": "مجزئ legacy يقرأ النص",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "بوابة الحزمة + ADR + توقعات مطعومة"
+    },
+    {
+      "path": "tests/test_bridge.py",
+      "moved_to": "suspended/tests__test_bridge.py",
+      "reason": "يعتمد على جسر legacy",
+      "suspended_at": "2026-10-06",
+      "re_admit_requires": "بوابة الحزمة + ADR + توقعات مطعومة"
+    }
+  ]
+}

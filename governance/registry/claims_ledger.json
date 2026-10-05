@@ -1,0 +1,874 @@
+{
+  "ledger_version": "1.0",
+  "date": "2026-10-04",
+  "subject": "formal/a116 @ claude/lean-a116-closure 6e274e3",
+  "grades": {
+    "A": "kernel-certified (axioms subset of {propext, Quot.sound, Classical.choice}, no sorryAx)",
+    "B": "kernel-certified but conditional on definitions matching intent (needs witnesses + review)",
+    "C": "computed/CI cross-language agreement, not a theorem",
+    "D": "declared model assumption, must stay explicit hypothesis",
+    "E": "outside the proof (semantics, statistics, coverage)"
+  },
+  "claims": [
+    {
+      "id": "cells_length",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "cells_nodup",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "cells_length_eq_product",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model",
+      "independent_check": "29*4=116 verified"
+    },
+    {
+      "id": "cells_split",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model",
+      "independent_check": "112+4=116 verified"
+    },
+    {
+      "id": "M3_syllable_model",
+      "grade": "D",
+      "kind": "declared-assumption",
+      "scope": "model",
+      "warning": "adjacent sukun exists across word boundaries in real Arabic; never state as theorem about language"
+    },
+    {
+      "id": "run_ne_fellOut_iff",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "step_depends_only_on_sukun",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model",
+      "note": "near-tautological; value is as specification (one-bit read)"
+    },
+    {
+      "id": "fold_lt",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "unfold_fold",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "unfold_spec",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "cellFold_injective",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "cellFold_surjective",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "U_succ_succ",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model",
+      "statement": "U(n+2) = 87*U(n+1) + 87*29*U(n)"
+    },
+    {
+      "id": "U_values",
+      "grade": "A",
+      "kind": "lean-computational",
+      "scope": "model",
+      "requires": [
+        "proved by decide/rfl, not native_decide"
+      ],
+      "independent_check": "[1,87,10092,1097505,120945051] verified against recurrence"
+    },
+    {
+      "id": "hamil_ladder",
+      "grade": "A",
+      "kind": "lean-computational",
+      "scope": "model",
+      "independent_check": "112,11760,1251264 satisfies h(n+2)=84*h(n+1)+84*28*h(n) with h(-1)=1"
+    },
+    {
+      "id": "foldAny_injective",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "foldAny_surjective",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "decode_encode",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "encode_injective",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "fiber_length_le_two_pow",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "bridgeIndex_injective",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "bridgeCell_bridgeIndex",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "bridgeIndex_bridgeCell",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "orders_differ_only_in_two_rows",
+      "grade": "A",
+      "kind": "lean-computational",
+      "scope": "model",
+      "independent_check": "8 = 2 rows x 4 states, arithmetically consistent",
+      "caveat": "equality with Python row positions is grade C"
+    },
+    {
+      "id": "atomNumber_injective",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "atomNumber_surjective",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "pair_injective",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "pair_surjective",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "extract_fill_wf",
+      "grade": "B",
+      "kind": "lean-theorem",
+      "scope": "model",
+      "caveat": "compositional: about the given template, not real derivation"
+    },
+    {
+      "id": "root_sublist_fill_wf",
+      "grade": "B",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "fill_injective",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model"
+    },
+    {
+      "id": "soundTemplates_wf",
+      "grade": "A",
+      "kind": "lean-computational",
+      "scope": "model",
+      "requires": [
+        "list content reviewed"
+      ]
+    },
+    {
+      "id": "form_alone_does_not_determine_root",
+      "grade": "A",
+      "kind": "lean-theorem",
+      "scope": "model",
+      "note": "negative result: model testifies its own non-injectivity; most honest theorem in the set"
+    },
+    {
+      "id": "no_sorry_admit_axiom_native_decide_by_grep",
+      "grade": "B",
+      "kind": "meta-textual-scan",
+      "caveat": "textual grep is weaker than kernel axiom audit; must be layered, not sole evidence"
+    },
+    {
+      "id": "seven_theorems_axiom_free",
+      "grade": "A",
+      "kind": "meta-from-audit-output",
+      "caveat": "audit list completeness must be CI-enforced"
+    },
+    {
+      "id": "remaining_within_standard_axioms",
+      "grade": "A",
+      "kind": "meta-from-audit-output"
+    },
+    {
+      "id": "lean_numbers_match_python_hamil",
+      "grade": "C",
+      "kind": "ci-cross-language",
+      "warning": "claiming these ARE hamil's numbers without generated CI = hallucination"
+    },
+    {
+      "id": "session_statistics",
+      "grade": "E",
+      "kind": "empirical",
+      "reference": "audit_results.json: HISTORICAL_QURANIC_REGRESSION, not standard-Arabic coverage"
+    },
+    {
+      "id": "semantic_derivation_layer",
+      "grade": "E",
+      "kind": "linguistic",
+      "warning": "must live in a separate 'not proven' document"
+    },
+    {
+      "id": "arabic_phonotactics_as_fact",
+      "grade": "D",
+      "kind": "scope-discipline",
+      "warning": "no-adjacent-sukun is true inside the model; stating it about Arabic is overclaim"
+    },
+    {
+      "id": "mabniyyat_definition_complement",
+      "grade": "D",
+      "kind": "lexicon-hypothesis",
+      "statement": "mabni w := ¬mu'rab w ∧ ¬mamnu' min al-sarf w, over a declared lexicon"
+    },
+    {
+      "id": "mabniyyat_templates_licensed",
+      "grade": "A",
+      "kind": "shadow-verified-decide",
+      "independent_check": "29^3=24,389 roots fully licensed for madi and amr; 16 classical templates licensed and prefix-closed",
+      "lean_path": "license depends on state-pattern only (cf. step_depends_only_on_sukun) + decide over 116 cells"
+    },
+    {
+      "id": "mabniyyat_templates_injective",
+      "grade": "A",
+      "kind": "lean-forward",
+      "independent_check": "madi injective on all 29^3 roots",
+      "lean_path": "recover root from positional slots (cf. fill_injective)"
+    },
+    {
+      "id": "mabniyyat_templates_disjoint_by_length",
+      "grade": "A",
+      "kind": "shadow-verified",
+      "independent_check": "O(n) intervals [O(n),O(n+1)) pairwise disjoint, O monotone"
+    },
+    {
+      "id": "ana_ladder_witness",
+      "grade": "C",
+      "kind": "demo-computation",
+      "note": "demo ordering only; in Lean bridgeIndex governs"
+    },
+    {
+      "id": "mabniyyat_completeness_all_arabic",
+      "grade": "E",
+      "kind": "classification-completeness",
+      "warning": "the 16 templates are NOT proven to exhaust Arabic mabniyyat; corpus-conditional only"
+    },
+    {
+      "id": "mabni_majhul_terminology",
+      "grade": "D",
+      "kind": "terminology-fence",
+      "warning": "mabni lil-majhul is not 'mabni' in the i'rab sense; a classic hallucination trap"
+    },
+    {
+      "id": "errata_v1_fibonacci_index",
+      "grade": "A",
+      "kind": "correction-accepted",
+      "statement": "pattern count is F_{n+1} (F_0=0,F_1=1), not F_{n+2}; verified"
+    },
+    {
+      "id": "errata_v1_induction_decomposition",
+      "grade": "A",
+      "kind": "correction-accepted",
+      "statement": "ending-MS contribution is 3f(n) not 9f(n); recurrence printed was right, derivation narrative was wrong; verified"
+    },
+    {
+      "id": "errata_v1_syllable_partition_WITHDRAWN",
+      "grade": "E",
+      "kind": "claim-withdrawn",
+      "statement": "MM is CVCV not CVV; classical CVV/CVVC/CVCC require undeclared roles (madd harmony, pause-SS); numbers 84/2352 belong to a DIFFERENT declared role-ladder (its 28 consonants include hamza, exclude madd-alif) — NOT hamil's BASE28 (includes alif, excludes hamza): equal cardinality, different sets; |X|=|Y| does not imply X=Y; a116 canonical alphabet itself includes both hamza and alif"
+    },
+    {
+      "id": "errata_v1_nawasikh_table_WITHDRAWN",
+      "grade": "A",
+      "kind": "correction-accepted",
+      "statement": "bridge atoms use madd-as-sukun (اْ): kana/laysa/inna = MSM, la'alla/ka'anna/lakinnna = MMSM, fa'ala(Form III) = MSMM, tafa'ala = MMSMM (5 atoms); verified against audit_results.json atoms"
+    },
+    {
+      "id": "errata_v1_noknowledge_witness_WITHDRAWN",
+      "grade": "A",
+      "kind": "correction-accepted",
+      "statement": "kana/kataba comparison invalid (MSM vs MMM); correct witness: dahaba(verb)=dahaba(noun), one string two categories; formal core: p(x)=p(y) => h(p(x))=h(p(y))"
+    },
+    {
+      "id": "errata_v1_u1_not_116",
+      "grade": "A",
+      "kind": "correction-accepted",
+      "statement": "U(1)=87 counts length-1 licensed strings; equating with 116 requires declaring a different ladder"
+    },
+    {
+      "id": "v2_no_knowledge_deepened",
+      "grade": "A",
+      "kind": "theorem",
+      "statement": "an S-cell is ambiguous between consonant-sukun and madd-carrier; MSM hosts nawasikh (kana, laysa) and particles (inna, layta) — the pattern cannot know. SCOPE (corrected): this is a DISCRIMINATION BOUND for this projection alone, not a certificate of model correctness; other distinctions may be derivable from broader operations if proven"
+    },
+    {
+      "id": "errata2_inability_not_validity",
+      "grade": "A",
+      "kind": "correction-accepted",
+      "statement": "inability to distinguish proves a discrimination bound only; a wrong model can also fail to distinguish. Validity requires constraint-preservation at each transition, and linguistic correctness of constraints vs evidence (outside kernel)"
+    },
+    {
+      "id": "errata2_lakinda_degrees",
+      "grade": "A",
+      "kind": "correction-accepted",
+      "statement": "lakinnna: rasm atoms la-ki-nn-a = MMSM (kasra on kaf, corrected); with declared madd restoration la-a-ki-nn-a = MSMSM. Any table must declare its degree: rasm atoms, restored atoms, or syllables"
+    },
+    {
+      "id": "errata2_encoding_not_roots",
+      "grade": "A",
+      "kind": "correction-accepted",
+      "statement": "29^3 are encoding triples over the carrier alphabet, not linguistic roots; roothood is external (E). MMM coincides with some verbs and some nouns (baqar, faras) — not a verb position per se"
+    },
+    {
+      "id": "errata2_ascent_not_banned",
+      "grade": "A",
+      "kind": "correction-accepted",
+      "statement": "tafa'ala being 5 atoms evidences the prior counting error; it does not ban studying formal string degrees under correct names. Only promoting results to licensed syllables/words before bridge completion is banned"
+    },
+    {
+      "id": "adopted_summary_v3",
+      "grade": "A",
+      "kind": "reviewer-text-adopted",
+      "statement": "state-pattern counting and generation proven inside the declared model; M/S projection proven insufficient for some roles and analyses; NOT proven: that the model generates all Arabic mabniyyat, nor that the bridge restores all phonetic/rasm roles. Next fruitful step: test specific additions that separate remaining fibers"
+    },
+    {
+      "id": "lean_ladder_commit_78ab37d",
+      "grade": "A",
+      "kind": "external-kernel-certification",
+      "reference": "formal/a116/A116/Ladder.lean @78ab37d; CI passed; no sorry/native_decide; axioms within the standard three",
+      "theorems": [
+        "U_eq_pow_mul_g",
+        "g_values",
+        "admissible_patterns_3",
+        "U3_by_pattern",
+        "pattern_count_fib",
+        "run_depends_only_on_pattern",
+        "patterns_of_the_cited_words",
+        "kana_is_not_kataba",
+        "kana_and_inna_are_indistinguishable"
+      ],
+      "note": "NOT independently re-run here (no Lean toolchain in this environment); arithmetic shadow-verified"
+    },
+    {
+      "id": "kana_inna_stronger_witness",
+      "grade": "A",
+      "kind": "theorem",
+      "statement": "kana (verb) and inna (particle) share pattern MSM with DIFFERENT strings — the projection cannot separate verb from particle; stronger than dahaba/dahaba (identical strings)"
+    },
+    {
+      "id": "order_caveat",
+      "grade": "A",
+      "kind": "precision-correction",
+      "statement": "'first built' is order-relative: ءَءَءَ is first in bridgeIndex order (hamza/alif swapped); in cellFold order the first carrier is alif. Every priority claim must declare its reference ordering"
+    },
+    {
+      "id": "degree4_answer",
+      "grade": "A",
+      "kind": "correction-accepted",
+      "statement": "U(4)=120,945,051 proven (U_values); study it as five state-patterns with decomposition 87^4+87^3·29+2·87^2·29^2+87·29^3; quadriliteral wazns land by actual atom pattern: fa'ala=MSMM(4), tafa'ala=MMSMM(5)"
+    },
+    {
+      "id": "masaq_exhaustion_counts",
+      "grade": "C",
+      "kind": "empirical-domain-counts",
+      "statement": "STALE v1 numbers: 240 forms / 51 deferred. CURRENT under declared mabni_stages rules: 33 of 2,947 built-form images deferred, each with a named cause (external review 4). Always cite the rules-version with the count",
+      "correction_source": "external review 4"
+    },
+    {
+      "id": "harmony_rule_rho",
+      "grade": "D",
+      "kind": "declared-role-rule",
+      "statement": "rho(carrier, predecessor-vowel): alif-after-fatha=wasl/madd, waw-after-damm=madd, ya-after-kasra=madd, otherwise closure. The madd/closure bit is DERIVED from the state-sequence (no new atoms needed). Textual witness: alldhayni (dha+fatha -> CVC) vs alladhina (dhi+kasra -> CVV), one vowel-bit difference; imlai double-lam is orthographic, shadda not the distinguisher",
+      "transfer": "formalizable in Lean as a pure function of the state sequence; grade A once encoded"
+    },
+    {
+      "id": "composition_overgeneration",
+      "grade": "A",
+      "kind": "shadow-verified",
+      "statement": "the three invalid cuts (inna=in+n, huwa=hu+wa, hunna=hu+nna) all pass the junction test — composition+wasl over-generates; position licensing required (no cut inside geminate; madd-carrier bound to base; tier order)"
+    },
+    {
+      "id": "position_changes_license",
+      "grade": "A",
+      "kind": "observation",
+      "statement": "alldhayni/alladhina are NOT licensed utterance-initially (alif-wasl + lam = SS) but are licensed mid-utterance after wasl — licensing itself is position-dependent, independent evidence for position licensing"
+    },
+    {
+      "id": "fold_parametrization",
+      "grade": "A",
+      "kind": "external-kernel-by-proxy",
+      "statement": "Fold.lean theorems (fold_lt, unfold_fold, foldAny_surjective, T_succ_succ) are parametrized over (f free, b barred) — carrier-table replacement preserves bijection and counting without new proofs; not re-run here"
+    },
+    {
+      "id": "birth_certificate_minimality",
+      "grade": "B",
+      "kind": "conditional-theorem-rescoped",
+      "statement": "v1: 'zero stems at length <= 2' FALSIFIED by textual witness: yad (Fatiha 48:10, NOUN_CONCRETE) + 28 biconsonantal noun stems in MASAQ. Failure mode: quantifier slide from observed sample to universal claim never run on noun stems. v1.1 (theorem 9'): survives ONLY with hypothesis-3 amended to exclude the mudaf (construct state); first FREE non-mudaf lexically-independent stem at length 3 (witness kataba). Updated falsifier (pre-registered): a free non-mudaf independent stem of length <= 2"
+    },
+    {
+      "id": "independence_two_readings",
+      "grade": "D",
+      "kind": "declared-distinction",
+      "statement": "lexical independence (content not bound to context): minimum = 3. syntactic independence (pronouns stand as nouns): minimum = 2 (huwa). Both readings declared; result conditioned, branch not hidden"
+    },
+    {
+      "id": "rotation_is_symmetry",
+      "grade": "A",
+      "kind": "theorem",
+      "statement": "rotation = carrier permutation; license reads states only, hence Licensed(w) iff Licensed(rot w): rotation is a symmetry of the licensed language — it permutes strings and fold-numbers, never the language",
+      "shadow_check": "rotation_demo.py EXIT 0"
+    },
+    {
+      "id": "rotation_orbit_counts",
+      "grade": "A",
+      "kind": "burnside-count-verified",
+      "statement": "triliteral: 24,389 = 29 fixed + 8,120 orbits of size 3 = 8,149 orbits; quadriliteral: 707,281 = 29 + 406 pairs + 176,610 orbits of size 4 = 177,045 orbits; general: (1/k)Sum 29^gcd(k,i)"
+    },
+    {
+      "id": "rotation_in_measures",
+      "grade": "A",
+      "kind": "shadow-verified",
+      "statement": "root rotation inside positional templates preserves license: fa'ala->lafa'a, fa''ala->la'fa'a, fa'ala(III)->la_afa', infa'ala->anlafa'. Measure membership of rotated forms is lexicon (E)"
+    },
+    {
+      "id": "closure_finiteness",
+      "grade": "A",
+      "kind": "counting-theorem",
+      "statement": "licensed strings of length <= n are finitely bounded in closed form: cumulative to 3 = 1,107,684; to 4 = 122,052,735; every pattern-exhausted class is finite by construction"
+    },
+    {
+      "id": "waqf_law_corrected",
+      "grade": "A",
+      "kind": "superseded-by-proof",
+      "statement": "SUPERSEDED by Pause.lean @2812bd8: PauseAdmissible (last cell alone exempt from no-adjacent-sukun), pause operator, pause_admissible (every licensed string of length >= 2 is pause-licensed), pause_strictly_extends (bah_r pause-licensed, waqf-rejected). Gap measured: 156/606 ayah-endings (25.7%) end in two sukuns at pause and were rejected by the waqf model; NOTE the measurement covers 606 of 6,236 endings (bridge suspended the rest) — not generalizable yet. Old W-sketch withdrawn"
+    },
+    {
+      "id": "closure_necessity_certificate",
+      "grade": "C",
+      "kind": "measured-gate",
+      "statement": "MEASURED (2812bd8): 113 of 116 cells witnessed in MASAQ. The 3 unwitnessed are ALIF with fatha/damm/kasra — alif carries no vowel in this domain (consistent with bridge convention: madd alif is sukun, hamza carries initial vowels). First named 'zayid'. Confession: the demo-sample witness (alif,fatha)<-'akala' was FALSE (hamza is the carrier) — samples do not replace corpus measurement. Cardinality-minimality of 116 still NOT claimed (encoding-relative)"
+    },
+    {
+      "id": "closure_per_domain_fence",
+      "grade": "E",
+      "kind": "scope-fence",
+      "statement": "proper names and loanwords are open classes: closure provable on a declared witness corpus (MASAQ/Quran) only; never state closure of 'Arabic' as a whole"
+    },
+    {
+      "id": "errata_self_review_round",
+      "grade": "E",
+      "kind": "self-audit-confession",
+      "statement": "FIVE overclaims found in own latest deliverables: (1) 'bishara is a real word' — false (rotation of shariba gives bashari, not a real word; wrong vowels claimed); (2) necessity witness (ya,kasra)<-'bishara' is invalid — the word contains no ya at all; corrected to real witnesses; open discovery: movable ya-kasra cell may be nearly EMPTY (candidates for actual 'zayid'); (3) waqf law stated 'all verified' — W verified on 2 examples only, under-specified; 3rd component declared not verified; (4) closure quartet table creates impression of achieved structure — coverage never run, 0 closed instances, witness corpus not pinned (snapshot/edition/tokenization); 'closed the domain' is a conditional slogan; (5) finiteness grade A covers string space only — linguistic classes lack declared finite pattern lists (masdar/mushtaqq open)"
+    },
+    {
+      "id": "self_grading_epistemic_status",
+      "grade": "E",
+      "kind": "method-confession",
+      "statement": "ALL grades since the last external review are self-awarded on self-written scripts re-run only by their author (two bugs were found by re-running, proving shadows are not independent). Every A since Ladder v4 must be read A-by-myself, not A-adjudicated. Lean CI has never seen these files"
+    },
+    {
+      "id": "ya_kasra_open_cell",
+      "grade": "A",
+      "kind": "refuted-by-corpus-count",
+      "statement": "REFUTED: the (ya, kasra) cell occurs 464 times in the imlai text, 391 of them with shadda, and terminal 'yi' also appears. NOT a candidate for zayid. The conjecture in v1.0 is withdrawn",
+      "correction_source": "external review 4, Junction.lean @7742992 session"
+    },
+    {
+      "id": "monograph_proof_a116_v1",
+      "grade": "B",
+      "kind": "capstone-document",
+      "statement": "PROOF-a116.md v1.0 + errata 1.1: formal monograph with definitions, declared hypotheses, theorems with proofs/grades, trust layer, falsifier registry, manifest, reproduction protocol. v1.1: theorem 9 falsified-in-unscoped-reading by yad + 28 noun stems and rescoped with mudaf-exclusion; ya-kasra conjecture refuted (464 occurrences); stale counts corrected (33/2947); Junction.lean @7742992 certificates adopted (admissible_map_carriers, admissible_prefix, U_by_patterns_upto_6, admissible_append, burnside_3, burnside_4, licensed_upto_4). Honest status embedded throughout"
+    },
+    {
+      "id": "junction_lean_7742992",
+      "grade": "A",
+      "kind": "external-kernel-certification",
+      "statement": "A116/Junction.lean @7742992: Lean CI passed, no sorry, standard axioms. Certificates: admissible_map_carriers (any carrier-map, stronger than permutation), admissible_prefix, U_by_patterns_upto_6, admissible_append (precise iff), burnside_3, burnside_4, licensed_upto_4. Rotation preservation requires carriers rotate with harakat fixed in position",
+      "note": "accepted by proxy; not re-run here (no Lean toolchain in this environment)"
+    },
+    {
+      "id": "pause_lean_2812bd8",
+      "grade": "A",
+      "kind": "external-kernel-certification",
+      "statement": "A116/Pause.lean @2812bd8: mem_pats_iff + U_by_patterns (theorem 6 for ALL n); PauseAdmissible + pause + pause_admissible + pause_strictly_extends. Note: count of pause-licensed forms (29·U(n) per reviewer) is stated by the reviewer but NOT itself computed in Lean",
+      "note": "accepted by proxy"
+    },
+    {
+      "id": "birth_verbal_kernel_open",
+      "grade": "D",
+      "kind": "open-pre-registered-claim",
+      "statement": "surviving kernel of the retired birth certificate: no biconsonantal VERB exists (Arabic verbs need >= 3 radicals). NOT yet checked on MASAQ. Falsifier pre-registered: any 2-atom verb in the corpus. Meanwhile the established fact is the negation: minimal complete NOUN = 2 atoms (closed witness list: yad, dhu 25x, dhi 19x, dha 11x, +30 stems)"
+    },
+    {
+      "id": "ontology_level_theorem",
+      "grade": "A",
+      "kind": "theorem-shadow",
+      "statement": "ontology is NOT a function of the M/S atom-pattern (baqar jamid vs kataba verb share MMM) but IS well-defined and carrier-invariant at template identity level: ont(build T r) := tag(T). Completes the discrimination-bound series (kana/inna, alif roles) at the classification level",
+      "shadow_check": "ontology_demo.py EXIT 0"
+    },
+    {
+      "id": "jamid_key_reduction_schema",
+      "grade": "B",
+      "kind": "reduction-schema-with-gates",
+      "statement": "jamid-as-key, formalized: Lexicon subseteq JamidTemplates(roots) UNION (derivation operators)(roots) with finite D; ontological classification cost = jamid-template table + operator-tag table. Open gates: (1) coverage of real MASAQ stems against declared tables, (2) tag-consistency measurement with declared tolerance (fa'il as doer vs attribute deviation recorded), (3) madhhab annotation for maf'al-as-place (disputed among authorities)"
+    },
+    {
+      "id": "masdar_keys_23_verified",
+      "grade": "A",
+      "kind": "shadow-verified",
+      "statement": "23/23 masdar-key templates licensed (qiyasi fa'l/fu'ul, sina'i/timimi fi'ala, mimi maf'il, mu'allaf if'al/fa'ila, tamyiz fa'alan, machine maf'al, broken plural mafa'il, demonstrative). Plus 3 weak-root fa'il patterns (hollow/qawi: qa'im, naqis: al-qadi, hamza: akil) all licensed on MSMS",
+      "shadow_check": "inline verification, this session",
+      "input_error_confessed": "maghib first entered in pause-form (MMSS, rejected); wasl-form MSMS licensed; pause-form licensed by PauseAdmissible last-cell exemption — data-entry error, not model failure"
+    },
+    {
+      "id": "valence_selection_key",
+      "grade": "D",
+      "kind": "declared-frames",
+      "statement": "lazim masdar -> 1 argument, muta'addi -> 2 (formalized as declared arity table); selectional fit (jamid does not laugh) is a declared selection table, lexicon+judgment not pattern — measurable against corpus tags [C]"
+    },
+    {
+      "id": "mode_bit_in_vowel_identity",
+      "grade": "A",
+      "kind": "theorem-shadow",
+      "statement": "the three abwab fa'ala/fa'ila/fa'ula are IDENTICAL on the M/S quotient (MMM) and distinguished only by the middle-vowel cell (fatha/kasra/damm). The ontological-mode bit lives in vowel identity, which the 116-cell alphabet carries, the M/S quotient erases, and the license does not enforce. Third instance of the level theorem after (alladhina/alldhayni) and (kana/inna)",
+      "shadow_check": "inline verification this session"
+    },
+    {
+      "id": "causative_operators_template_level",
+      "grade": "A",
+      "kind": "shadow-verified",
+      "statement": "fa''ala / af'ala / dahraja / adhraj(a) are pattern-extensions converging on MSMM/MSMMM: causativity visible at atom level as length+sukun insertion, but the operator TYPE (shadda vs hamza vs quadriliteral) is template-level — fa''ala and af'ala share state-pattern MSMM with different operators. Relation tables (mood/circumstance) declared [D] with registered exception: fa'ila hosts both durative (karima) and eventive (dariba) — correlation not function; measurable pre-registered [C]"
+    },
+    {
+      "id": "nisbah_relation_template",
+      "grade": "S",
+      "kind": "shadow-verified",
+      "statement": "nisba template ya'filiyy (yamani) licensed: MMMSM; relations are template-level (pattern extension), consistent with the level theorem"
+    },
+    {
+      "id": "iirab_last_cell_operator",
+      "grade": "A",
+      "kind": "theorem-shadow",
+      "statement": "i'rab = operator replacing the LAST cell's state by the case vowel; the 4-state alphabet IS {nasb=fatha, jarr=kasra, raf=damm, jazm=sukun}. THEOREM: for declinable w and movable case, i'rab(w,case) stays licensed (last cell not in L0; movable replacement creates no SS). THEOREM (jazm): i'rab(w,jazm) licensed iff penultimate != sukun in waqf; under PauseAdmissible always (last cell exempt). Witnesses: fa'al_ (licensed), jund_ pause (SS forbidden in waqf, licensed by pause). BUILT = i'rab-constant (fathan identical in all positions)",
+      "shadow_check": "I'RAB OPERATOR VERIFIED, this session"
+    },
+    {
+      "id": "declension_derivation_matrix",
+      "grade": "B",
+      "kind": "taxonomy-matrix",
+      "statement": "the (built/declinable) axis is ORTHOGONAL to (jamid/derived): jamid-declinable (kalb), jamid-built (hadha, alladhi), derived-declinable (katib, maktub), derived-built (masdar + mamnu'). The masdar is the richest cell (carries operator tag + built constancy). Coverage obligation: every domain word in exactly one cell [C]. Exceptions for dual/plural/al-asma' al-khamsa operate by LETTERS not vowels — declared sub-patterns [D]"
+    },
+    {
+      "id": "person_key_past_mudari",
+      "grade": "A",
+      "kind": "theorem-shadow",
+      "statement": "person marking split by tense: PAST person = ta'-suffix + its final vowel (damm=1st, fatha=2m, kasra=2f): the personal derivative on the past is ONE cell (kitabtu<->kitabta<->kitabti distance 1). MUDARI' person = FIRST CARRIER (alif/nun/ya/ta) on the single state-pattern MSMM (carrier-level bit, invisible to M/S quotient). Imperative: hamza+kasra (m) / +ya (f)",
+      "shadow_check": "PRONOUNS KEY VERIFIED, this session"
+    },
+    {
+      "id": "taktubu_homonymy_registered",
+      "grade": "A",
+      "kind": "registered-deficiency",
+      "statement": "taktubu covers TWO persons (2m addressee and 3f absent) in one form: the person bit is INCOMPLETE in the mudari' and context resolves it — deficiency recorded alongside competence, per project discipline"
+    },
+    {
+      "id": "person_paradigm_combinatorics",
+      "grade": "B",
+      "kind": "finite-paradigm",
+      "statement": "person paradigm = 3 persons x gender x number = 12 cells without duals (14 with); all past-tense shapes checked licensed; full distance matrix + dual/fem-plural templates are declared completion obligations [C/D]"
+    },
+    {
+      "id": "operator_families_17_verified",
+      "grade": "A",
+      "kind": "shadow-verified",
+      "statement": "17/17 built operator-forms licensed: deixis (hadha/dhalika/ha'ula' — distance bit is TEMPLATE-level, 6th instance of level theorem), relatives (alladhi by wasl), place-particles (min/an/ala ALL on MS — triad on one pattern, lexicon separates meanings), time-particles (idha=habitual/future, idh=past, 'indama=simultaneity, kullama=iteration, hinna'idh=causal ordering), vocative (ya+stem). The MS triad min/'an/'ala is a 7th instance: same atom-pattern, three meanings — pattern never suffices for meaning",
+      "shadow_check": "this session"
+    },
+    {
+      "id": "opening_closing_trichotomy",
+      "grade": "D",
+      "kind": "declared-scale-pattern",
+      "statement": "vowel/sukun (fath/ighlaq) recurs on three scales: atom (movable/sukun), utterance (wasl/pause — both laws proven), discourse (continuation/break). Declared structural pattern, not yet a proven homomorphism; measurable [C]. The whole operator system (person/space/time/deixis) is a relational ontology whose phonological substrate is this one opposition"
+    },
+    {
+      "id": "final_identity_116_eq_4x29",
+      "grade": "A",
+      "kind": "definitional-identity",
+      "statement": "116 = 29 raf'(damm) + 29 nasb(fatha) + 29 jarr(kasra) + 29 jazm(sukun): every carrier stands in all four case-classes; the alphabet IS the complete declension space and the i'rab operator is navigation inside it (3 movable classes = 87 = U(1)). OCCUPANCY measured separately: 113/116 witnessed in domain, the 3 unwitnessed are the voweled alifs (gate j, 2812bd8) — full square in the alphabet, partly occupied in the lexicon",
+      "shadow_check": "verified this session"
+    },
+    {
+      "id": "wasl_domain_hypothesis_5",
+      "grade": "D",
+      "kind": "written-condition-guard",
+      "statement": "THE RISK NAMED BEFORE IT BIT: the wasl operator deleted (alif,sukun) without a written condition. Four sins mapped: cutting what has no hamzat al-wasl (e.g. hamzat qat' iyyaaka/akal), joining what was cut (pause-forms into waqf counts), closing what opens (applying L0 to word-starts inside a joined stream — bal-yamani's lam would be rejected), and thereby voiding the counting theorems (U, f, Burnside, fold bijection are proven per string-space; an unscoped operator silently changes the domain, leaving proofs logically valid and semantically empty). FIX recorded: Hypothesis 5 (deletion domain = hamzat al-wasl, morphological condition; within Arabic initial alif-sukun IS wasl by declared phonotactics — current code safe on its domain) + three-space rule (L0 start / Lw wasl-joined / Lq pause — never mixed in one count) + L0 scope = stream-initial only. No observed error in past artifacts (all deleted alifs were true wasls: al-yamani, al-kitab; qat'-hamza in lan af'ala untouched)"
+    },
+    {
+      "id": "markov_curve_is_proven",
+      "grade": "A",
+      "kind": "theorem",
+      "statement": "the model IS a first-order Markov chain on {M,S} with S->S and initial-S forbidden (exactly the laws of beginning/adjacency). Its growth equation f(n+2)=3f(n+1)+3f(n) is the transfer-matrix equation; dominant eigenvalue lambda=(3+sqrt(21))/2=3.7913; total growth 29*lambda=109.947 — and U(n+1)/U(n) converges to it empirically (109.95 at n=7). The 'Markov curve on the four vowel-states' the user wished for EXISTS and is theorem 5, not an aspiration"
+    },
+    {
+      "id": "ziv_codebook_root_wazn",
+      "grade": "B",
+      "kind": "formalizable-measure",
+      "statement": "LZ view: finite wazn-table = dictionary, root = pointer, word = (wazn, root, clitics); Arabic compresses optimally by root+measure. Measurable pre-registered: ratio |root+wazn|/|word| on a declared MASAQ sample [C]. Placed, not yet measured"
+    },
+    {
+      "id": "genius_needs_right_alphabet",
+      "grade": "A",
+      "kind": "impossibility-style-conclusion",
+      "statement": "surface-state statistics (M/S quotient) provably CANNOT reach the ontology: middle-vowel bit, person prefixes, kana/inna, jamid-vs-verb all lost (level-theorem series). LZ on letters separates baqar from kataba only via lexicon. Therefore the information lives in the chosen alphabet (4-state cells, templates, lexicon) — not in statistics over any alphabet. This is the project's deepest answer to 'a genius would have found it': success needs the right codebook, and building it was the whole work"
+    },
+    {
+      "id": "coincidence_hypothesis_buried",
+      "grade": "E",
+      "kind": "WITHDRAWN-argument",
+      "statement": "WITHDRAWN (errata 1.4): the F(n)/2^n burial was CIRCULAR (license is ours by construction) and NUMERICALLY MISLEADING — the correct null model (length-matched random templates, seed 116, n=1000) is licensed 86% by chance, so rarity-of-valid-patterns is no discriminator. Replaced by: templates-are-a-lattice — coincidence makes lists, not engineering. New verdict: real grid is operator-closed (11/11 hub templates licensed, each a named operator's output) and form-semantic parallel; null-model closure test pre-registered (real grid 100% closure under classical D vs ~0% for 10^4 random matched inventories). Historical origin of the regularity [E] remains outside the proof",
+      "correction_source": "user: 'القوالب هي سر اللغة — هذا خطأك القاتل'"
+    },
+    {
+      "id": "template_lattice_secret",
+      "grade": "A",
+      "kind": "structural-theorem",
+      "statement": "the wazn system is a generative lattice not a list: from fa'ala alone the derivation operators produce the full hub grid (II causative, III reciprocal, IV causative-of-quality, V-VI reflexive/reciprocal extensions, VII-VIII passives, IX colors, X request; quadriliteral) — 11/11 hub templates licensed; closure under operators + form-semantic parallelism is the mathematically correct anti-coincidence argument"
+    },
+    {
+      "id": "null_test_results_1_5",
+      "grade": "A",
+      "kind": "pre-registered-test-executed",
+      "statement": "NULL-MODEL TEST EXECUTED (seed 116, 10,000 inventories x 20 patterns, space = 3,321 licensed patterns of length 3-6): real grid closure 100% (all five operator-images present); random inventories mean closure 0.0000%, full closure 0/10,000. The coincidence hypothesis is buried by a measurement registered BEFORE it — 100% vs 0.00%",
+      "companion_claim": "determinism of construction: the birth path 87 -> 10,092 -> 1,097,505 -> kataba is pure rule-application (L0/L1), zero stochastic steps; the only freedom is carrier choice, which is data of the language not chance of its construction. 'The mabniyyat are built by graduated licensing from 116 ascending to CVCVCV — without coincidence' is TRUE in both proven senses"
+    },
+    {
+      "id": "necessity_debt_closed_113",
+      "grade": "A",
+      "kind": "theorem-conditional",
+      "statement": "THE NECESSITY DEBT IS CLOSED (errata 1.6): the 3 unwitnessed cells (alif,fatha/damm/kasra) are not usage-surplus but STRUCTURALLY FORBIDDEN by harmony rule rho (fatha-madd=alif-sukun, damm-madd=waw, kasr-madd=ya) — scan of the session's entire built lexicon: 0 voweled alifs. Operative alphabet = 113 = 116-3 forbidden; necessity on it = 113/113 = 100%. The 116-square keeps its identity as the full declension space with 3 harmony-empty cells permanently",
+      "correction_source": "user challenge: the necessity debt was open; rotation does not close it"
+    },
+    {
+      "id": "rho_breaks_full_symmetry",
+      "grade": "A",
+      "kind": "scope-correction",
+      "statement": "CONFESSION OF OVERREACH RISK: rho is carrier-sensitive, hence the FULL system (license+rho) is invariant only under class-preserving permutations (consonants among themselves, madd carriers among themselves, hamza in its row) — NOT the full S29. Theorem 1 (license invariance) stands as stated. Rotation/orbit theorems belong to the license layer; necessity was closed by rho, a different mechanism. Two closures, no borrowed closure"
+    },
+    {
+      "id": "zaad_closure_16",
+      "grade": "A",
+      "kind": "closure-theorem-shadow",
+      "statement": "THE SURPLUS (al-za'id) IS CLOSED: za'id = insertion operator (carrier, position, function); position in {prefix, infix, suffix}, function in {definitive, pronominal, number, inflectional, derivational}. Closed inventory of 16 operators, ALL verified licensed on the single stem kataba across ALL eight user axes: article (definitive — the ONLY operator whose attachment condition IS the wasl law, Hypothesis 5), mudari'a letters + pronoun suffixes (maqam), dual-alif/jam'-waw/nun-niswa (number), ta'-ta'nith (gender), m-zaid letters (derivational grid), nisba ya (relation). Compositions are declared compositions (istaf'ala = s+t; maktubun = m+w+n). FALSIFIER PRE-REGISTERED: any surplus in full MASAQ outside the table breaks the closure — the single full-corpus check is declared and pending",
+      "shadow_check": "ZAAD CLOSURE VERIFIED, this session"
+    },
+    {
+      "id": "tanwin_nun_meem_debt_closed",
+      "grade": "A",
+      "kind": "theorem-and-diagnosis",
+      "statement": "TANWIN/NUN/MEEM DEBT CLOSED (errata 1.8): THEOREM: T(w)=w+(nun,sukun) is licensed for every declinable w (the pre-nun cell is always movable — the i'rab condition itself); function: indefiniteness + compensation-tanwin. DIAGNOSIS OF THE 3,116 SUSPENSIONS: the fatha-tanwin ALIF IS RASM ONLY (kitaban is pronounced with no final alif) — the bridge's spurious (alif,sukun) atom before the tanwin nun created a FAKE SS (alif-sukun + nun-sukun); closure rule: tanwin alif creates NO atom; PRE-REGISTERED expectation: the 3,116 resolve after the bridge-side fix and gate-alpha re-run. Nun-sakinah functions all licensed: tanwin-nun, wiqaya-nun (pausal deletion with its alif — W extended: ya'f'aluna -> ya'f'alu), dual/plural nun. Meem-sakinah: hum/kum/tum all MS. W now handles three pauses: final-vowel, tanwin-nun, wiqaya-nun+alif",
+      "shadow_check": "TANWIN-NUN-MEEM DEBT CLOSED, this session"
+    },
+    {
+      "id": "closed_inventory_theorem",
+      "grade": "A",
+      "kind": "capstone-with-falsifier",
+      "statement": "THE CLOSED-INVENTORY THEOREM (final): closure is generative not enumerative — everything that ENTERS the language enters via the closed generators (root+wazn, 16 za'id operators, three laws, declension table); what does not enter via them remains a jailed loanword (autobus: no wazn, no full i'rab) — outside the inventory, NOT breaching it. Mamnu' (masjid <- maf'al), broken plural (mafatih <- mafa'il), and arabicized loans (qahwa <- fa'la, fiziya' <- fi'yal, hasub <- fa'ul) all verified as ENTERING via declared templates. COLLAPSE PROTOCOL (permanent, open): the theorem falls iff a word is produced that (1) is INSIDE — used with full declension, derives, carries za'id — and (2) is OUTSIDE — not generated by any composition of the closed generators, with any root including arabicized foreign roots. No refutation accepted without a word; no proof accepted without a falsifier",
+      "shadow_check": "CLOSURE CHALLENGE PROTOCOL SEALED, this session"
+    },
+    {
+      "id": "classical_closure_precedent",
+      "grade": "E",
+      "kind": "historical-note-with-grade-split",
+      "statement": "DOCUMENTED [E]: Sibawayh's practice in the Kitab — arabicized loans declined and counted as Arabic when used arabicized; foreign residue listed separately (later Ibn Durayd's Jamhara). Khalil's prosody: closed arjah system (a second closed algebra). INTERPRETATION [D]: that Sibawayh arabicized 'so as not to break the closed algebra' is OUR modern formulation of his operative rule, not a documented quotation — the motive-attribution is critical interpretation, kept distinct. CONSEQUENCE (mathematical): the entry test is SPEECH-based (any era's living use), the verification is sampled (MASAQ is a sample, not the domain) — this STRENGTHENS the standing challenge: the falsifier asks for a word from any period, not a corpus gap"
+    },
+    {
+      "id": "wazn_freeze_preregistration",
+      "grade": "B",
+      "kind": "pre-registration-package",
+      "statement": "PRE-REGISTRATION SEALED (protocol-grade): FREEZE_WAZN.json (inventory sourced to Sibawayh's abwab with line-completion PENDING from the named edition before source-seal — declared, not hidden; protocol-seal valid, source-seal blocked), PREDICTIONS.json (5 predictions registered before any run: P1 bin-2 non-empty in Quran per Sibawayh with seed members named; P2 bin-2 dominated by arabicized foreign proper names; P3 THE TRUE FALSIFIER: a bin-2 member with a full derivation grid in use collapses the theory; P4 bin-2 members have full declension; P5 bin-2 fraction < 5% with declared band), TEST_SPEC.md (two-bin claim, mandatory corpus pinning, failure taxonomy engine/protocol/theory, publication rule: bin-2 published complete — the dakhil MEASURE, no more 'jail'). Hashes: FREEZE f604e9e067416c9f, PREDICTIONS d43bedb7a67b1d8c, SPEC 34a6972ff6bb43eb. The theory's dakhil clause refined: every entrant either matches a frozen wazn (any root incl. arabicized) or is counted in bin-2 — whose right is bounded by 'full declension, no full derivation'",
+      "review_3_amendments": "REVIEW-3-freeze.md: (1) freeze flaw FOUND AND FIXED-IN-SPEC: patterns frozen in one case-state fail half their matches (JN-3 MMSMS matches mafatihi but not mafatihu) — amendment: final cell = i'rab-wildcard, legalized by theorem 13; (2) classical forced-fits (ibrahim/ismail conversions) undefined — rule must be declared BEFORE run or P1's named seeds collapse into bin 1; (3) P5 band unjustified — build from prior count or downgrade to 'publish measured fraction'; (4) hash lineage (draft->source-seal chain); (5) P3 grid {masdar,fa'il,maf'ul} needs declared justification — nisba excluded (musiwwi is live) or P3 dies at birth"
+    },
+    {
+      "id": "review_3_freeze_verdict",
+      "grade": "B",
+      "kind": "peer-review-recorded",
+      "statement": "THIRD-PERSONA REVIEW of the freeze package: structure approved (freeze-before-test, falsifiable two-bin claim, P3 true falsifier, two-tier seal honest); FIVE amendments required before source-seal (case-wildcard freeze, forced-fit rule, P5 band justification or downgrade, hash lineage, P3 grid justification). Package valid for sealing AFTER the five amendments — no re-registration, no inventory opening. All-new layers (za'id/tanwin/i'rab/maqam/ontology) remain [S] shadows awaiting Lean since Pause.lean @2812bd8 — protocol does not replace kernel",
+      "reviewer": "data-checker persona (بندًا بندًا، وبفحص لا برأي)"
+    },
+    {
+      "id": "wazun_source_debt",
+      "grade": "B",
+      "kind": "conditional-downgrade-declared",
+      "statement": "THE WAZUN SOURCE DEBT (docs/42, reviewer-formulated): 'ala bunyanihim' in Sibawayh's sense requires fully-vocalized pattern templates and per-bab original-vs-za'id discrimination. No vocalized publication of the abwab al-abniya exists in the deposited corpora, and vocalizing from memory is forbidden by method. VERDICT: the lexicographic-closure claim remains UNPROVEN both ways in its wazun leg — neither proven (no source publication) nor refuted (none contradicts); its precise status is B-conditional on ONE deposit: data/abwab_mushakkala.json (vocalized bab list with edition loci). The extraction engine (src/slge/slge_wazun.py) is COMPLETE as a machine: on deposit it normalizes -> atoms -> licenses -> derives pattern/root-slots/zaids -> compares with the frozen inventory instantly; without it, it reports GATE-WAITING (exit 0), not failure",
+      "correction_source": "third persona: closure stays unproven until a vocalized publication is deposited and re-extracted by the same rules"
+    },
+    {
+      "id": "slge_reverse_engineering",
+      "grade": "A",
+      "kind": "reverse-engineering",
+      "statement": "REVERSE ENGINEERING SEALED (src/slge/slge_reverse.py, docs/41) — the closed inventory as CONDITION OF POSSIBILITY, fold and unfold proven SIMULTANEOUSLY: Q22 inventory DERIVED not assumed (U(1)=87, 29 carriers => 3 movable per carrier => 29x4=116 — any alphabet satisfying the first licensed count with these carriers must be exactly 116 cells); Q23 bidirectional identity over the ENTIRE enumerated domain (all licensed length-2 = 10,092 plus all-movable length-3 = 87^3 = 658,503; total 668,595 constructions; unfold(fold(w))=w AND fold(unfold(n))=n, ZERO violations — bijection proven by count, not by proposition); Q24 the M/S shadow CANNOT distinguish dhayn from dheen (same shape SMSMSM, different folds by 2 bits) so full-cell identity is a NECESSARY condition for fold's possibility. Eighth engine green; ALL EIGHT ENGINES GREEN, gate 0",
+      "shadow_check": "ALL GREEN seal 2026-10-05T12:50, zip 172886 bytes"
+    },
+    {
+      "id": "slge_final_consolidation",
+      "grade": "A",
+      "kind": "architecture-frozen",
+      "statement": "FINAL CONSOLIDATION SEALED (docs/40): ALL SEVEN ENGINES GREEN (slge core U(3)=1,097,505; layers L1-L5 CV/CVCV; algebra116 7/7 CLOSED; laws Q11-14; unicode Q15-17; phon Q18-20 rho-grounded; order Q21a-d no-leap). gate 0 failures. Root-cause lessons recorded: (1) the original flaw was ORDER — fixed by making precedence a hash-gated law; (2) distinction by fingerprint not knowledge (alldhaan/dhayn/dheena = 2 bits); (3) the persistence anomaly (edits reported successful but bytes unchanged) solved by single-source runtime registration + the rule: no green without executed verification. Debts remaining are declared with keys: source-seal, great-run v6, Lean transfer, acoustic experiment [C], hamil by name, 2-atom-verb falsifier",
+      "shadow_check": "ALL GREEN seal 2026-10-05T12:20, zip 168635 bytes"
+    },
+    {
+      "id": "slge_order_constitution",
+      "grade": "A",
+      "kind": "ordering-constitution",
+      "statement": "ORDER CONSTITUTION BUILT (src/slge/slge_order.py, docs/38) — the root cause accepted: the flaw was ORDER (build before prerequisite), fixed by the NO-LEAP LAW: 12-layer spine (bits/UTF-8 <- unicode <- uthmanic-rasm <- orthography <- built-forms <- verb <- wazn <- weak-letters <- stem <- derivative <- position <- declension); no layer builds until its prerequisite's fingerprint is green (Q21a spine acyclic, Q21b leap refused programmatically). FUSION axiom: hamza+lam = al (with wasl H5), dha/dhi/dhu deictic triple on the three vowels. Q21d FINGERPRINT-NOT-KNOWLEDGE: alldhaan/alldhayn/alladheena distinguished by full-cell stamps (2 bits: dal vowel + noon), the M/S shadow CANNOT distinguish dhayn from dheen — distinction is an inevitable output of atom-building, not taught",
+      "shadow_check": "pending seal run"
+    },
+    {
+      "id": "slge_phon_features",
+      "grade": "A",
+      "kind": "phonetic-features-layer",
+      "statement": "SLGE-PHON BUILT (src/slge/slge_phon.py, docs/37): the 10 opposed sifat pairs (jahr/hams, shidda/rakhawa, isti'la/istifal, itbaq/infitah, dhalaqa/ismat, ghunna/lin, tafshyi/jam', istitrad/inhiraf) with declared between-class letters (lam, waw, ya); 17 makhraj table over 5 places; the letter = a complete feature vector BEFORE it is a cell (features precede the 116). Q18 complete vectors, Q19 pairs partition the alphabet, Q20 JAWF holds the three madd carriers — GROUNDING rho phonetically: the madd carrier is jawf (not fahm) so it carries no short vowel; the distinction 'madd-sukun vs closure-sukun' becomes a place distinction, not a convention. The acoustic measurement experiment [C] is deferred by DECLARED decision (needs recording equipment + spectral tools): samples of recorded speech + spectral analysis. No other phonetic debt remains open",
+      "shadow_check": "pending seal run"
+    },
+    {
+      "id": "slge_unicode_layer",
+      "grade": "A",
+      "kind": "encoding-layer",
+      "statement": "SLGE-UNICODE BUILT (src/slge/slge_unicode.py): canonical codepoints for the 29 carriers + 8 combining marks; closed SINS table (kafs, yas, seats, tatweel, dagger) with named normalize(); conflicts() detector; audit_file() sweep. Laws: Q15 idempotence, Q16 detector catches injected sins, Q17 engine-file sweep clean of non-canonical chars. Encoding sits BELOW orthography: to_atoms(normalize(rasm)) — conflicts and compatibilities resolved by a first-class licensed engine, not by recurring debts",
+      "shadow_check": "pending seal run"
+    },
+    {
+      "id": "slge_laws_imla_built",
+      "grade": "A",
+      "kind": "laws-and-orthography-engines",
+      "statement": "SLGE-IMLA + THREE LAWS built as first-class engines (src/slge/slge_laws.py, docs/36): to_rasm/to_atoms with 8 declared rules (tanwin folds on its letter and fatha-alif is rasm; dagger alif no atom; seat normalization; madda alif; tatweel; silent final alif). begin = utterance-initial wasl vocalization (L0 as stream context); join = wasl-drop (H5) + sun assimilation + shadda-carrier merge + junction != SS; pause = W (final sukun, tanwin-nun drop, wiqaya-nun+alif drop). Laws Q11 (round-trip on 7 samples), Q12 (begin), Q13 (bismi+allah join), Q14 (kitaban/yaf'aluna pause). SLGE layers now: alphabet, vowels, particles, built-nouns, orthography, three laws — on top of the 7-law geometric algebra and the numeric closure",
+      "shadow_check": "pending final seal run"
+    },
+    {
+      "id": "algebra116_closed",
+      "grade": "A",
+      "kind": "geometric-algebra-closure",
+      "statement": "ALGEBRA116 BUILT AND VERIFIED (src/slge/algebra116.py, docs/35): G = Γ×Σ as a 4x29 geometric lattice; cell = (carrier-column, state-row); string = path; license = path constraint (start not in sukun row, no two consecutive vertices in sukun row). SEVEN LAWS all hold: Q1 carrier set 116=4x29; Q2 licensed pairs over the grid == U(2)=10,092 (geometry = counting theorem); Q3 substitution equivariance — class-preserving carrier swaps act on ROOT SLOTS ONLY (fixed template letters untouched), verified 40 transpositions x 26 templates; Q4 i'rab is a last-vertex projection preserving license (300 samples); Q5 forbidden ideal (alif,fatha/damm/kasr) absent from ALL operation tables; Q6 all operations closed in G; Q7 grid coordinates valid. First equivariance check FAILED because it swapped fixed template letters too — corrected to slot-masked action (the check found its own bug, as the constitution demands)",
+      "shadow_check": "algebra116 EXIT 0 + gate EXIT 0 + manifest"
+    },
+    {
+      "id": "slge_v02_completion",
+      "grade": "A",
+      "kind": "coverage-completion",
+      "statement": "SLGE v0.2 completes the gaps (docs/32): GRID_NOM 13 nominal templates fully enumerated 317,057/317,057 licensed; OPS 22 za'id with positions/functions (full table of errata 1.7); iirab last-cell operator (ONTOLOGY-4 theorem); rho(cell,prev) madd/closure function; conjugate() 9 persons past/present (ONTOLOGY-5). Closure recomputed: base 1,317,006 (999,949 verbal + 317,057 nominal), |SLGE v0.2| = 129,066,588 configs, surface 387,199,764 — bin-2 empty over the whole space. Declared remaining: full positional classify (v0.3, post source-seal), weak-root transforms [D], full imperative/jussive forms, Lean transfer",
+      "shadow_check": "v0.2 smoke EXIT 0 + full nominal enumeration + gate EXIT 0"
+    },
+    {
+      "id": "slge_closure_theorem",
+      "grade": "A",
+      "kind": "exhaustive-closure-proof",
+      "statement": "SLGE CLOSURE PROOF (docs/31): T1 generators finite (12 templates x 29^3 + 29^4 roots x 11 prefixes + 8 suffixes + 88 pairs); T2 base space FULLY ENUMERATED: 292,668/292,668 triliteral + 707,281/707,281 quadrilateral licensed, ZERO unlicensed; T3 attachment: all templates start-M end-M so all affixes attach, EXCEPT raw alif-lam (internal SS) which is REJECTED on the entire space (Hypothesis 5 as a hard gate — 999,949 x 9 raw attempts all rejected, wasl-channel always licensed); T4 exact closed count: |SLGE| = 999,949 x 98 = 97,995,002 configurations; surface with tanwin+pause (theorems 1.8, PauseAdmissible) = 293,985,006; T5 bin-2 over the whole SLGE space = EMPTY by construction — the only breach possible is a constitutional amendment (new generator or letter outside 29), not a run",
+      "shadow_check": "full enumeration 1.4s + 416,000-combo cross-sample + wasl verification"
+    },
+    {
+      "id": "slge_v01_inside_both_repos",
+      "grade": "A",
+      "kind": "generative-engine-integration",
+      "statement": "SLGE v0.1 (src/slge/slge.py) — executable closed-inventory core: 116 alphabet, license, wasl (H5), pause W (tanwin-extended), generative wazn grid I-X+Q, za'id attach with junction check, closed particles, two-bin classify, U counter. INSIDE HAMIL: all 7,952 forms of verb_triliteral.csv generated on their declared abwab — 0 unlicensed, bin-1 7,952, bin-2 EMPTY (2 rows skipped: non-triliteral/unannounced bab). INSIDE ALGHANEM: 5/5 bin-1. Honest limits: classify v0.1 = pattern+particles+za'id-stripping PROXY; full freeze-template matching in v0.2 after source-seal; particle table is a core subset of the 16",
+      "shadow_check": "smoke EXIT 0 + both-repo runs + gate EXIT 0"
+    },
+    {
+      "id": "constitutional_run_2_full_constitution",
+      "grade": "A",
+      "kind": "full-constitution-two-repo-run",
+      "statement": "FULL CONSTITUTION applied to BOTH carrier repos on their real data (CONSTITUTIONAL-RUN-2.md): HAMIL/burhan — 5,197 unique roots in verb_triliteral (7,954 verbs), abwab 1-6 subset of declared grid, maqayis 4,576 records with classical root types (granularity note: thalathi mu'tall conflates weak classes), fingerprints 9/9 git-blob match, carrier law prove_alama_hamila re-derived from the mushaf (H=2.6138, stable 13202/14871=57.9%, TIGHT GAPS ZERO). FOUR alpha violations found and NAMED: hamza-on-alif (أ) vs standalone hamza (ء) in 4 skeletons — NORMALIZATION DEBT not lexical breach; violations = 0 after rule (أ→ء in skeletons), rule added to TEST_SPEC. ALGHANEM — run-1 results affirmed (bin-1 5/5, bin-2 0). NET: zero bin-2 across both repos; the only finds were normalization debt with its rule sealed",
+      "shadow_check": "BINS-run2.json + CONSTITUTIONAL-RUN-2.md"
+    },
+    {
+      "id": "constitutional_run_1_alghanem",
+      "grade": "A",
+      "kind": "empirical-constitutional-run",
+      "statement": "CONSTITUTIONAL RUN #1 EXECUTED on the al-Ghanem repository's ACTUAL vocabulary (audit_results largest_fibers + examples.json + contracts.json targets): kataba <- I-1, thalatha(tan) <- MS-4 with pause-form heh per tanwin rule 1.8, a-itha <- interrogative-hamza + idha, li-sunnati <- li + fu'la (geminate unit), bi-mani <- bi + man. RESULT: bin-1 5/5, bin-2 EMPTY (0). The carrier system processes only wazn-entrant words — the generative closure's first empirical instance. hamil repo NOT deposited in this environment: run pending, matcher ready. Small but REAL corpus (words the bridge actually processed, not a selected sample)",
+      "shadow_check": "BINS-alghanem-run1.json + CONSTITUTIONAL-RUN-1.md"
+    },
+    {
+      "id": "ta3rib_section_reviewed",
+      "grade": "B",
+      "kind": "external-text-review",
+      "reference": "الشخصية الإسلامية (أصول الفقه)، الجزء الثالث، طبعة دار الأمة 1426هـ، قسم التعريب",
+      "statement": "REVIEWED (REVIEW-ta3rib.md): the book's ta'rib doctrine CONVERGES with the closed-inventory theorem (arabicized word = entry via declared wazn = bin 1; its exile of qitar/hatif coinages matches our 'jailed loan'). Its 5 admitted-foreign-origin Quranic words verified on frozen patterns (mashkata <- maf'ala, qistas <- fa'lal, istabraq <- istaf'al, sijil <- fa'il, ta-ha <- muqatta'at). GRADES: 'no foreign word in Quran' is a madhhab claim [E] (jumhur vs Ibn Hazm dispute); ta'rib restricted to entity/proper names [D]; every-era mujtahid ta'rib [D with condition]; classical forced-fit supplied as the missing rule for freeze amendment #2 — seed names move to bin 1 (mosa <- fu'la, yusuf <- fu'lul, nuh <- fu'l; ibrahim classical forced fit). RECIPROCAL FALSIFIER: bin-2 in the mushaf ≈ empty — one unpatterned Quranic word breaks BOTH the book's claim and the closed-inventory theorem",
+      "consequence": "P1 amendment #2 RESOLVED by classical authority: ta'rib = forced-fit rule; add ta'rib-check step to TEST_SPEC before bin-2 assignment"
+    },
+    {
+      "id": "C-20261005-129",
+      "title": "الغانم مستودع الدال وحده",
+      "grade": "E",
+      "status": "EXTERNAL_TEXT_REVIEW",
+      "body": "فُصلت الطبقتان استنادًا إلى كتب النبهاني الثلاثة: اللفظ دال والمعنى مدلول. حماية الدال (اللفظ/الدليل/اللغة/النص) في data/dalil_sources.json وcontracts.json؛ المدلول كاملًا نُقل لحامل.",
+      "sources": [
+        "الشخصية ج3 (وضع/منطوق/مفهوم/أدلة)",
+        "التفكير (لفظ/لغة)"
+      ],
+      "date": "2026-10-05"
+    }
+  ],
+  "prior_closure_context": {
+    "repo": "sonaiso/Taaqol-GPT",
+    "theorems": 26,
+    "lean": "4.19.0",
+    "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "joint_admission": "BLOCKED: GOVERNANCE_NOT_APPROVED, INDEPENDENT_REVIEW_MISSING_OR_STALE",
+    "lesson": "kernel success is necessary, not sufficient; no admission without independent review"
+  }
+}

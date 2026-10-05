@@ -1,0 +1,123 @@
+{
+  "repo": "alghanem-constitution",
+  "sealed_at": "2026-10-05T17:00-ALL-DEBTS-CLOSED",
+  "rules": [
+    "no claim without ledger grade",
+    "no engine without green run",
+    "no data without hash"
+  ],
+  "files": {
+    ".github/workflows/ci.yml": {
+      "sha256": "924106da1b723efcebcc6b5cce68d0ff1e0b5c8300ad7671340e3ba02d6901bb",
+      "bytes": 319
+    },
+    "README.md": {
+      "bytes": 2140,
+      "sha256": "70119fdccdc7eae58dc42f49cb4062fe2c86a9fae7ca947330f3664b40106fd3"
+    },
+    "data/audit_results.json": {
+      "sha256": "9d57352b1004fb63a759c7af7c2c814232d01a935a1a8f463fd602b6a2643d01",
+      "bytes": 4286
+    },
+    "data/candidate_audit.csv": {
+      "sha256": "d815d7dd094bbf7a84611159d6fcd951a83dc76c9a77b7ab085c4f208a6253dd",
+      "bytes": 238587
+    },
+    "data/contracts.json": {
+      "sha256": "14f713e8af5f315dae4f4fea3fec89d98c6c95ed8d32306a57acbdf400a8b8d4",
+      "bytes": 5752
+    },
+    "data/examples.json": {
+      "sha256": "7faee8398cbd771b072fa0e132d9cfba166b0d7ab34cccaf82c59ad1b0597dde",
+      "bytes": 10307
+    },
+    "docs/COVERAGE_MATRIX.md": {
+      "sha256": "acf320ffaf57f674629f6bd212c34bccd913f1be4dc1633643251d1c1ae0cdee",
+      "bytes": 1131
+    },
+    "governance/history/amendments.jsonl": {
+      "sha256": "fe4bf6f9b4db3d7c5286384fbd50e0d4e26e5bf448a75260e0095c829b584fd4",
+      "bytes": 1376
+    },
+    "governance/registry/claims_ledger.json": {
+      "bytes": 59581,
+      "sha256": "271a66b986a97964be1a52f7bc9c96911979aca4e9ac303c260dd3d6c7a9666f"
+    },
+    "legacy/RecoveryMetric.lean": {
+      "sha256": "8949eaa4697d9a41c2bde7d332fd6dec9c448c8717a146c8c9818bc33ecf778c",
+      "bytes": 8480
+    },
+    "legacy/alghanem_bridge.py": {
+      "sha256": "982586e4b8fd7c91ca7243c132cf6de6356d81b3d8ce4b2d3832e37db393e1ab",
+      "bytes": 29145
+    },
+    "legacy/check_codebooks.py": {
+      "sha256": "005dfa9726464526fb1e5bc6208d6fbb9e1ab458d105ebc225ff1da67913138f",
+      "bytes": 2439
+    },
+    "legacy/seg.py": {
+      "sha256": "ebf90861b2f8558fb7f86cf60d6a7494a4d967af7c526b53e13af2111eb255fe",
+      "bytes": 3516
+    },
+    "src/alghanem_bridge.py": {
+      "sha256": "982586e4b8fd7c91ca7243c132cf6de6356d81b3d8ce4b2d3832e37db393e1ab",
+      "bytes": 29145
+    },
+    "src/slge/algebra116.py": {
+      "sha256": "ddc2925c8f444acdb03f20bc4aa761f440b46536a882fd16c86231bcc23fee54",
+      "bytes": 6360
+    },
+    "src/slge/slge.py": {
+      "sha256": "11c0faa7591449165c8908a520e1e1933193f5c52793477d076b8a780b4d1bfa",
+      "bytes": 13648
+    },
+    "src/slge/slge_laws.py": {
+      "sha256": "4a8bc48266f25536ce4a4f7549c05edbfb1381e36b35477ef18b9f51609dc99c",
+      "bytes": 6729
+    },
+    "src/slge/slge_layers.py": {
+      "sha256": "44303d0fbe111020d7a7c4cc039ac6081153b6795774c5c77c27f9ccdb926f6f",
+      "bytes": 5529
+    },
+    "src/slge/slge_order.py": {
+      "sha256": "516ef88c8dd377b2c32d910c013060ad22f69a25c05a2341d387c0938dc11d97",
+      "bytes": 4703
+    },
+    "src/slge/slge_phon.py": {
+      "sha256": "eaa6ba499b7270683e566ca671ae4857861df97c29419d08efc8d175dc22e45f",
+      "bytes": 5026
+    },
+    "src/slge/slge_reverse.py": {
+      "sha256": "cf54108cdc1224071a15dcb116ae69c4786d54007bfd475ae6cf01af41cf8f89",
+      "bytes": 5899
+    },
+    "src/slge/slge_unicode.py": {
+      "sha256": "6cb309eff74d73139eb91e7078222e7da5170fa1314b14f9315b27b534c59e1b",
+      "bytes": 3602
+    },
+    "src/slge/slge_wazun.py": {
+      "sha256": "0dd79c4810cc0dee2fb6476d95759f2651b51ddd1d0ac755ed59c8be54e844ea",
+      "bytes": 3087
+    },
+    "tests/test_bridge.py": {
+      "sha256": "08fbcc3b3fb1c84fa962e4de1525e0460fe74695b9da4d9a81e165ff4998851e",
+      "bytes": 1524
+    },
+    "tests/test_coverage.py": {
+      "sha256": "7d48c45998c2dd84ee51f06bdbf09d86ac5d23727888e9a3045f95c6b14f9ea2",
+      "bytes": 1474
+    },
+    "tests/test_slge.py": {
+      "sha256": "b904fea036848bb07521b23481cf608516783077bdaa436c676d2a01b09c6b39",
+      "bytes": 292
+    },
+    "tools/verify_repo.py": {
+      "sha256": "d870ff8ea9b5a88bd76b62c3024e5f7c4d51e4366b227835d2016723ac3cc55c",
+      "bytes": 647
+    },
+    "data/dalil_sources.json": {
+      "bytes": 3711,
+      "sha256": "a1b9f75d4fd80d55bad59333322ea47da008051dc78f5e60d04129c5ffc4046f"
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "scope": "HISTORICAL_QURANIC_REGRESSION_NOT_STANDARD_ARABIC_COVERAGE",
+  "upstream_commit": "5bcd8ffdf0f288e5df54064b4efc3423269733cc",
+  "corpus_sha256": "37633090743d403886b334d12dd911d1994e49767faa9f2be0f01fd48b466c5a",
+  "corpus_bytes": 1319901,
+  "occurrences": 78245,
+  "distinct_forms": 18200,
+  "joined_forms_with_real_left": 17343,
+  "joined_policy": "first same-line observed preceding token per distinct form; no inferred vowel or annotation",
+  "stats": {
+    "start_continue": {
+      "domain": 18200,
+      "codebook_bytes": 2593430,
+      "READY": 8895,
+      "exact_roundtrips": 8895,
+      "sum_residual_bits_per_ready_form": 36,
+      "DEFER": 8820,
+      "REJECT": 485
+    },
+    "start_pause": {
+      "domain": 18200,
+      "codebook_bytes": 2570138,
+      "READY": 8895,
+      "exact_roundtrips": 8895,
+      "sum_residual_bits_per_ready_form": 2314,
+      "DEFER": 8820,
+      "REJECT": 485
+    },
+    "joined_continue": {
+      "domain": 17343,
+      "codebook_bytes": 3783325,
+      "READY": 4919,
+      "exact_roundtrips": 4919,
+      "sum_residual_bits_per_ready_form": 6,
+      "DEFER": 12141,
+      "REJECT": 283
+    },
+    "joined_pause": {
+      "domain": 17343,
+      "codebook_bytes": 3745230,
+      "READY": 4919,
+      "exact_roundtrips": 4919,
+      "sum_residual_bits_per_ready_form": 50,
+      "DEFER": 12141,
+      "REJECT": 283
+    }
+  },
+  "reason_counts": {
+    "start_continue": {
+      "HARAKA_IS_ABSENT_AND_IS_NEVER_GUESSED": 6623,
+      "THE_ROLE_OF_THIS_ALIF_IS_UNDECIDED": 2194,
+      "INITIAL_SUKUN_WITHOUT_REPAIR": 485,
+      "TANWIN_ATTACHMENT_IS_AMBIGUOUS": 3
+    },
+    "start_pause": {
+      "FINAL_HARAKA_IS_ABSENT": 896,
+      "HARAKA_IS_ABSENT_AND_IS_NEVER_GUESSED": 5727,
+      "THE_ROLE_OF_THIS_ALIF_IS_UNDECIDED": 2194,
+      "INITIAL_SUKUN_WITHOUT_REPAIR": 485,
+      "TANWIN_ATTACHMENT_IS_AMBIGUOUS": 3
+    },
+    "joined_continue": {
+      "THE_ROLE_OF_THIS_ALIF_IS_UNDECIDED": 4500,
+      "HARAKA_IS_ABSENT_AND_IS_NEVER_GUESSED": 11213,
+      "TANWIN_ATTACHMENT_IS_AMBIGUOUS": 5,
+      "INITIAL_SUKUN_WITHOUT_REPAIR": 283
+    },
+    "joined_pause": {
+      "THE_ROLE_OF_THIS_ALIF_IS_UNDECIDED": 4500,
+      "HARAKA_IS_ABSENT_AND_IS_NEVER_GUESSED": 10353,
+      "FINAL_HARAKA_IS_ABSENT": 860,
+      "TANWIN_ATTACHMENT_IS_AMBIGUOUS": 5,
+      "INITIAL_SUKUN_WITHOUT_REPAIR": 283
+    }
+  },
+  "fiber_size_histograms": {
+    "start_continue": {
+      "1": 8859,
+      "2": 18
+    },
+    "start_pause": {
+      "1": 7197,
+      "2": 577,
+      "3": 104,
+      "4": 40,
+      "5": 12,
+      "6": 2
+    },
+    "joined_continue": {
+      "1": 4913,
+      "2": 3
+    },
+    "joined_pause": {
+      "1": 4869,
+      "2": 25
+    }
+  },
+  "largest_fibers": {
+    "start_continue": {
+      "forms": [
+        "أَإِذَا",
+        "أَئِذَا"
+      ],
+      "atoms": [
+        "ءَ",
+        "ءِ",
+        "ذَ",
+        "اْ"
+      ],
+      "left": "",
+      "bits": 1
+    },
+    "start_pause": {
+      "forms": [
+        "ثَلَاثَةً",
+        "ثَلَاثَةٌ",
+        "ثَلَاثَةٍ",
+        "ثَلَاثَةَ",
+        "ثَلَاثَةُ",
+        "ثَلَاثَةِ"
+      ],
+      "atoms": [
+        "ثَ",
+        "لَ",
+        "اْ",
+        "ثَ",
+        "هْ"
+      ],
+      "left": "",
+      "bits": 3
+    },
+    "joined_continue": {
+      "forms": [
+        "لِسُنَّةِ",
+        "لِسُنَّتِ"
+      ],
+      "atoms": [
+        "لِ",
+        "سُ",
+        "نْ",
+        "نَ",
+        "تِ"
+      ],
+      "left": "تَجِدَ",
+      "bits": 1
+    },
+    "joined_pause": {
+      "forms": [
+        "بِمَنِ",
+        "بِمَنْ"
+      ],
+      "atoms": [
+        "بِ",
+        "مَ",
+        "نْ"
+      ],
+      "left": "أَعْلَمُ",
+      "bits": 1
+    }
+  },
+  "exact_recovery_cases": 27628,
+  "context_transitions": {
+    "successful_reversible_context_transports": 37216,
+    "destination_nonready_no_promotion": 3678,
+    "destination_context_unavailable": 548
+  },
+  "short_numbering_cases": 13573,
+  "minimality_scope": "fixed-length residual conditional on atoms, context and full shared finite codebook",
+  "whole_word_linguistic_license": false,
+  "new_lean_theorems_checked": false,
+  "general_language_closure": false
+}

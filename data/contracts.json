@@ -1,0 +1,199 @@
+{
+  "version": "progressive-definition-4",
+  "scope": {
+    "language": "fully_vocalized_standard_Arabic",
+    "foundation_lengths": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "foundation_is_final_length_cap": false,
+    "targets": [
+      "particles_and_functional_units",
+      "indeclinable_nouns",
+      "simple_triliteral_built_verb_forms",
+      "simple_quadriliteral_past",
+      "built_forms_of_nawasikh",
+      "licensed_pronominal_attachments"
+    ],
+    "excluded": [
+      "recorded_acoustic_matching",
+      "sentence_generation",
+      "declinable_outputs",
+      "augmented_verb_generation",
+      "derived_noun_generation"
+    ],
+    "target_inventory_complete": false,
+    "nawasikh_conflict": "Any target requiring a derivational family excluded above remains explicitly unresolved; no silent exception."
+  },
+  "roles": [
+    "encoding",
+    "orthographic",
+    "phonological_representation",
+    "stem",
+    "derivational",
+    "inflectional",
+    "syntactic",
+    "functional"
+  ],
+  "roles_are_disjoint": false,
+  "minimum_complete": {
+    "comparison_family_required": true,
+    "requires_coverage_proof": true,
+    "requires_deletion_witness_for_each_claimed_necessary_component": true,
+    "status": "OPEN"
+  },
+  "formal_rules": [
+    {
+      "id": "ATOM",
+      "premise": "carrier in C29, mark in H4, duration=1",
+      "conclusion": "well_typed_formal_unit",
+      "language_authority": false
+    },
+    {
+      "id": "LENGTHEN",
+      "premise": "one unit, short nonsukun vowel",
+      "conclusion": "same carrier and vowel, duration=2",
+      "language_authority": false
+    },
+    {
+      "id": "CONCAT",
+      "premise": "two checked formal sequences",
+      "conclusion": "ordered concatenation",
+      "language_authority": false
+    }
+  ],
+  "linguistic_rule_contracts": [
+    {
+      "id": "ORTHOGRAPHIC_ROLE_BRIDGE",
+      "requires": [
+        "raw UTF bytes",
+        "explicit normalization map",
+        "carrier-role map",
+        "origin record",
+        "pinned orthography rule",
+        "content-proof checker"
+      ],
+      "must_prove": "every surface span has a justified typed interpretation; any loss is explicit",
+      "status": "NO_BACKEND"
+    },
+    {
+      "id": "PHONOLOGICAL_REPRESENTATION",
+      "requires": [
+        "carrier roles",
+        "vowel quantities",
+        "declared non-recorded pronunciation rules"
+      ],
+      "must_prove": "symbolic phonological representation agrees with the selected rules",
+      "status": "NO_BACKEND"
+    },
+    {
+      "id": "IBTIDA_WASL_WAQF_BOUNDARY",
+      "requires": [
+        "word/morpheme/syllable boundary",
+        "mode",
+        "left/right environment where relevant",
+        "waqf kind where relevant"
+      ],
+      "must_prove": "each boundary transformation is authorized for that mode",
+      "status": "NO_BACKEND"
+    },
+    {
+      "id": "LEXICAL_AND_MORPHOLOGICAL_ANALYSIS",
+      "requires": [
+        "root/stem candidates",
+        "weight",
+        "tense/person/voice as relevant",
+        "independent content evidence"
+      ],
+      "must_prove": "selected analysis is supported, not just caller-declared",
+      "status": "NO_BACKEND"
+    },
+    {
+      "id": "FUNCTION_AND_ATTACHMENT",
+      "requires": [
+        "role",
+        "host constraints",
+        "attachment rule",
+        "vowel-change rule if used"
+      ],
+      "must_prove": "composition licenses the claimed role and changes",
+      "status": "NO_BACKEND"
+    },
+    {
+      "id": "MABNI_SCOPE",
+      "requires": [
+        "selected class",
+        "building condition",
+        "target scope authority"
+      ],
+      "must_prove": "the selected word reading belongs to the permitted built-form scope",
+      "status": "NO_BACKEND"
+    },
+    {
+      "id": "ANALYSIS_COMPATIBILITY",
+      "requires": [
+        "all component certificates",
+        "same source and rule versions",
+        "same selected analysis and boundary interpretation"
+      ],
+      "must_prove": "component claims can hold simultaneously",
+      "status": "NO_BACKEND"
+    }
+  ],
+  "unimplemented_transformations": [
+    "shadda_contract_expand",
+    "tanwin_by_role_and_mode",
+    "hamza_seat_and_wasl",
+    "ilal",
+    "deletion",
+    "lam_pronoun_vowel_change",
+    "independent_linguistic_decomposition"
+  ],
+  "proof_backend_contract": {
+    "input": [
+      "exact claim",
+      "context",
+      "rule version",
+      "premise certificates",
+      "proof object"
+    ],
+    "output": [
+      "verified claim or rejection",
+      "assumptions",
+      "verified dependencies",
+      "residuals"
+    ],
+    "reject": [
+      "ready boolean",
+      "count=116 declaration",
+      "unresolved evidence URL",
+      "fixture as linguistic authority"
+    ],
+    "implemented": false
+  },
+  "positive_word_profile": {
+    "surface": "نَحْنُ",
+    "checker": "word_checker.py",
+    "scope": "whole_word_type_under_declared_context_profile",
+    "source_premises": "evidence/source_axioms.json",
+    "general_linguistic_backends_complete": false,
+    "global_stage_admission": false
+  },
+  "formal_recovery_and_metric": {
+    "lean_file": "formal/RecoveryMetric.lean",
+    "verified_theorems": 26,
+    "licensing_of_all_linguistic_rules": false,
+    "complete_mabni_coverage": false,
+    "ambient_metric": "real-valued prefix ultrametric on Fin(116)^Nat",
+    "guarded_stream_model": "no initial sukun when onset required and no adjacent sukuns; no general waqf model"
+  },
+  "contextual_rasm_bridge": {
+    "domain": "historical Quranic finite regression, separate from standard Arabic coverage",
+    "new_lean_checked": false,
+    "fixed_residual_capacity_minimal": true,
+    "minimum_total_storage_proved": false,
+    "linguistic_word_license": false
+  }
+}

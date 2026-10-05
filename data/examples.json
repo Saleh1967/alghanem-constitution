@@ -1,0 +1,445 @@
+{
+  "kataba": {
+    "nodes": [
+      {
+        "rule": "ATOM",
+        "parents": [],
+        "output": [
+          {
+            "carrier": "ك",
+            "mark": "a",
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "rule": "ATOM",
+        "parents": [],
+        "output": [
+          {
+            "carrier": "ت",
+            "mark": "a",
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "rule": "CONCAT",
+        "parents": [
+          "b6a47fb9ed6ea48b1cc79d3ae701ff666a6a874981c0ecf1f51b792eec5da4ae",
+          "ffda3a9f15b891bed49d29cea2a0409a50e9575fc971206fba10077c5eb04c2c"
+        ],
+        "output": [
+          {
+            "carrier": "ك",
+            "mark": "a",
+            "duration": 1
+          },
+          {
+            "carrier": "ت",
+            "mark": "a",
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "rule": "ATOM",
+        "parents": [],
+        "output": [
+          {
+            "carrier": "ب",
+            "mark": "a",
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "rule": "CONCAT",
+        "parents": [
+          "86fd4ca6ad0522fc05c4bfd6254b0ea3e1a618a7b83e383ee38d6482b25053c5",
+          "f57e72f7099be58bef0f5f3cdb67e413d1d49a56f6b7cf7f5d73038053e7e12f"
+        ],
+        "output": [
+          {
+            "carrier": "ك",
+            "mark": "a",
+            "duration": 1
+          },
+          {
+            "carrier": "ت",
+            "mark": "a",
+            "duration": 1
+          },
+          {
+            "carrier": "ب",
+            "mark": "a",
+            "duration": 1
+          }
+        ]
+      }
+    ],
+    "root": "ff74e2707ec2fd19cc225538a9abd65dd9af8a7b725737a8dd3ccaf3d4f5e149",
+    "verdict": {
+      "formal": "VERIFIED",
+      "word": "SUSPENDED",
+      "root": "ff74e2707ec2fd19cc225538a9abd65dd9af8a7b725737a8dd3ccaf3d4f5e149",
+      "context": {
+        "mode": "ibtida",
+        "left": null,
+        "right": null,
+        "boundary": "word",
+        "waqf_kind": null
+      },
+      "analysis_id": null,
+      "carriers": 3,
+      "measure": 3,
+      "blockers": [
+        "ORTHOGRAPHIC_ROLE_BRIDGE",
+        "PHONOLOGICAL_REPRESENTATION",
+        "IBTIDA_WASL_WAQF_BOUNDARY",
+        "LEXICAL_AND_MORPHOLOGICAL_ANALYSIS",
+        "FUNCTION_AND_ATTACHMENT",
+        "MABNI_SCOPE",
+        "ANALYSIS_COMPATIBILITY",
+        "ANALYSIS_NOT_SELECTED"
+      ],
+      "linguistic_impossibility_proven": false
+    }
+  },
+  "dahraja": {
+    "nodes": [
+      {
+        "rule": "ATOM",
+        "parents": [],
+        "output": [
+          {
+            "carrier": "د",
+            "mark": "a",
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "rule": "ATOM",
+        "parents": [],
+        "output": [
+          {
+            "carrier": "ح",
+            "mark": "s",
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "rule": "CONCAT",
+        "parents": [
+          "51ff8d84c7a041eb0f155ecf21c34b7a872a48d6bc745b3e9eef4c2dc0a8ca25",
+          "d71a9302b0f8d5a492368aac05b5f756ccc6d4381dfbfd8bb4d32b9fa7fcf009"
+        ],
+        "output": [
+          {
+            "carrier": "د",
+            "mark": "a",
+            "duration": 1
+          },
+          {
+            "carrier": "ح",
+            "mark": "s",
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "rule": "ATOM",
+        "parents": [],
+        "output": [
+          {
+            "carrier": "ر",
+            "mark": "a",
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "rule": "CONCAT",
+        "parents": [
+          "dc1923be75593d1913df37fc6c11aba370e0e771e9cef82acfbbdae87474ecc5",
+          "0d01c6c783d34dbcc0d7f6308a831cca5ff3ff1cedfca7edf475cdb51ab51fc5"
+        ],
+        "output": [
+          {
+            "carrier": "د",
+            "mark": "a",
+            "duration": 1
+          },
+          {
+            "carrier": "ح",
+            "mark": "s",
+            "duration": 1
+          },
+          {
+            "carrier": "ر",
+            "mark": "a",
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "rule": "ATOM",
+        "parents": [],
+        "output": [
+          {
+            "carrier": "ج",
+            "mark": "a",
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "rule": "CONCAT",
+        "parents": [
+          "78b26cc17c1c12515d9f2ef9824234382d0cc6540eca0fbf32a508ef32379020",
+          "28d2c4109447cd768a5336bd12f3fe847ca3d2a80eeca048a0feb2bb304c37df"
+        ],
+        "output": [
+          {
+            "carrier": "د",
+            "mark": "a",
+            "duration": 1
+          },
+          {
+            "carrier": "ح",
+            "mark": "s",
+            "duration": 1
+          },
+          {
+            "carrier": "ر",
+            "mark": "a",
+            "duration": 1
+          },
+          {
+            "carrier": "ج",
+            "mark": "a",
+            "duration": 1
+          }
+        ]
+      }
+    ],
+    "root": "3def78094794669288d51f604d0d8bbafb35c15807b8162363c97c482e5cc5b5",
+    "verdict": {
+      "formal": "VERIFIED",
+      "word": "SUSPENDED",
+      "root": "3def78094794669288d51f604d0d8bbafb35c15807b8162363c97c482e5cc5b5",
+      "context": {
+        "mode": "ibtida",
+        "left": null,
+        "right": null,
+        "boundary": "word",
+        "waqf_kind": null
+      },
+      "analysis_id": null,
+      "carriers": 4,
+      "measure": 4,
+      "blockers": [
+        "ORTHOGRAPHIC_ROLE_BRIDGE",
+        "PHONOLOGICAL_REPRESENTATION",
+        "IBTIDA_WASL_WAQF_BOUNDARY",
+        "LEXICAL_AND_MORPHOLOGICAL_ANALYSIS",
+        "FUNCTION_AND_ATTACHMENT",
+        "MABNI_SCOPE",
+        "ANALYSIS_COMPATIBILITY",
+        "ANALYSIS_NOT_SELECTED"
+      ],
+      "linguistic_impossibility_proven": false
+    }
+  },
+  "minkum": {
+    "nodes": [
+      {
+        "rule": "ATOM",
+        "parents": [],
+        "output": [
+          {
+            "carrier": "م",
+            "mark": "i",
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "rule": "ATOM",
+        "parents": [],
+        "output": [
+          {
+            "carrier": "ن",
+            "mark": "s",
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "rule": "CONCAT",
+        "parents": [
+          "2d1f936815e82361a96c16209539bfb4c311451761209cf4802bede1f1402e95",
+          "5bce9f53a3abf49bbafc0072c6fa1448a88d22395fb8c17d1008a611421ac17f"
+        ],
+        "output": [
+          {
+            "carrier": "م",
+            "mark": "i",
+            "duration": 1
+          },
+          {
+            "carrier": "ن",
+            "mark": "s",
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "rule": "ATOM",
+        "parents": [],
+        "output": [
+          {
+            "carrier": "ك",
+            "mark": "u",
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "rule": "CONCAT",
+        "parents": [
+          "f8cbd1db6940bedfd5d52c37fd7ec1c8cfface490f773265a53e019a210556b7",
+          "88b04fb5adf3e47401844bb4be632c70aeba2ac2e3fcec338d9f116f2bf78f6e"
+        ],
+        "output": [
+          {
+            "carrier": "م",
+            "mark": "i",
+            "duration": 1
+          },
+          {
+            "carrier": "ن",
+            "mark": "s",
+            "duration": 1
+          },
+          {
+            "carrier": "ك",
+            "mark": "u",
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "rule": "ATOM",
+        "parents": [],
+        "output": [
+          {
+            "carrier": "م",
+            "mark": "s",
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "rule": "CONCAT",
+        "parents": [
+          "3040f50f4bad5eca37e43599ca45874cb8e700248d0f21bd5c7afbe131e6dad5",
+          "4fe17305669bce183fd4cca2d371509a6718d2c92797d98740a0d1df0eb7bab0"
+        ],
+        "output": [
+          {
+            "carrier": "م",
+            "mark": "i",
+            "duration": 1
+          },
+          {
+            "carrier": "ن",
+            "mark": "s",
+            "duration": 1
+          },
+          {
+            "carrier": "ك",
+            "mark": "u",
+            "duration": 1
+          },
+          {
+            "carrier": "م",
+            "mark": "s",
+            "duration": 1
+          }
+        ]
+      }
+    ],
+    "root": "6f21d6a10e3df198486bdec1e22e4bc062c631dadbdbc9c31afe7c12c581e173",
+    "verdict": {
+      "formal": "VERIFIED",
+      "word": "SUSPENDED",
+      "root": "6f21d6a10e3df198486bdec1e22e4bc062c631dadbdbc9c31afe7c12c581e173",
+      "context": {
+        "mode": "ibtida",
+        "left": null,
+        "right": null,
+        "boundary": "word",
+        "waqf_kind": null
+      },
+      "analysis_id": null,
+      "carriers": 4,
+      "measure": 4,
+      "blockers": [
+        "ORTHOGRAPHIC_ROLE_BRIDGE",
+        "PHONOLOGICAL_REPRESENTATION",
+        "IBTIDA_WASL_WAQF_BOUNDARY",
+        "LEXICAL_AND_MORPHOLOGICAL_ANALYSIS",
+        "FUNCTION_AND_ATTACHMENT",
+        "MABNI_SCOPE",
+        "ANALYSIS_COMPATIBILITY",
+        "ANALYSIS_NOT_SELECTED"
+      ],
+      "linguistic_impossibility_proven": false
+    }
+  },
+  "alif_fatha": {
+    "nodes": [
+      {
+        "rule": "ATOM",
+        "parents": [],
+        "output": [
+          {
+            "carrier": "ا",
+            "mark": "a",
+            "duration": 1
+          }
+        ]
+      }
+    ],
+    "root": "e6fc0a41405e51b152312a687f4420f2a12d6eefe972a525fc8fff81891fed86",
+    "verdict": {
+      "formal": "VERIFIED",
+      "word": "SUSPENDED",
+      "root": "e6fc0a41405e51b152312a687f4420f2a12d6eefe972a525fc8fff81891fed86",
+      "context": {
+        "mode": "ibtida",
+        "left": null,
+        "right": null,
+        "boundary": "word",
+        "waqf_kind": null
+      },
+      "analysis_id": null,
+      "carriers": 1,
+      "measure": 1,
+      "blockers": [
+        "ORTHOGRAPHIC_ROLE_BRIDGE",
+        "PHONOLOGICAL_REPRESENTATION",
+        "IBTIDA_WASL_WAQF_BOUNDARY",
+        "LEXICAL_AND_MORPHOLOGICAL_ANALYSIS",
+        "FUNCTION_AND_ATTACHMENT",
+        "MABNI_SCOPE",
+        "ANALYSIS_COMPATIBILITY",
+        "ANALYSIS_NOT_SELECTED"
+      ],
+      "linguistic_impossibility_proven": false
+    }
+  }
+}

@@ -1,0 +1,251 @@
+{
+ "files": {
+  "audit_results.json": "9d57352b1004fb63a759c7af7c2c814232d01a935a1a8f463fd602b6a2643d01",
+  "contracts.json": "14f713e8af5f315dae4f4fea3fec89d98c6c95ed8d32306a57acbdf400a8b8d4",
+  "dalil_sources.json": "a1b9f75d4fd80d55bad59333322ea47da008051dc78f5e60d04129c5ffc4046f",
+  "examples.json": "7faee8398cbd771b072fa0e132d9cfba166b0d7ab34cccaf82c59ad1b0597dde",
+  "jurjani_nadhm.json": "93d6708df1e57ba4bdbcbaad1953862a7fbfd0ad4c9ffe2e44a3ba8f4a03f331",
+  "lazum_istilahat.json": "2913e2dcc8851d0dce2660969fd4932e1a2345f2f7af03cb10679b2512fc976c",
+  "masaq_schema.json": "18a317554fbe0aa11f3c437479aca71d88235067638822a24a6a9a064d27e276",
+  "nadhm_stats.json": "a827c1723c33de5447ac5c1f5c33598878c9620ddcadb64b0fc20b726a24729f",
+  "qiyas_golden.json": "f587e52144aa42d029d8a87c1b79f3639f339870aaad895eefc482345335c68d",
+  "qiyas_istilahat.json": "55c34c739a7e2df389439ac0df01b7f622983e6794700b3de5fc1722c67e7144"
+ },
+ "sentences": 315,
+ "words": 1848,
+ "status": {
+  "CERTIFICATE": 15,
+  "OUTSIDE_DECLARED_DOMAIN": 42,
+  "REJECT": 53,
+  "DEFER": 1738
+ },
+ "reasons": {
+  "DEFER:UNVOCALIZED_WORD_IS_NEVER_GUESSED": 1684,
+  "REJECT:INITIAL_SUKUN_WITHOUT_REPAIR": 53,
+  "DEFER:HARAKA_IS_ABSENT_AND_IS_NEVER_GUESSED": 53,
+  "OUTSIDE_DECLARED_DOMAIN:-": 42,
+  "DEFER:NOT_ONE_EXACT_WORD_SPAN": 1
+ },
+ "certificates": [
+  {
+   "word": "أَإِذَا",
+   "atoms": [
+    "ءَ",
+    "ءِ",
+    "ذَ",
+    "اْ"
+   ],
+   "integer": 1288347164236,
+   "residue": [
+    [
+     "SUKUN",
+     3,
+     ""
+    ]
+   ]
+  },
+  {
+   "word": "أَئِذَا",
+   "atoms": [
+    "ءَ",
+    "ءِ",
+    "ذَ",
+    "اْ"
+   ],
+   "integer": 1288348769446,
+   "residue": [
+    [
+     "SUKUN",
+     3,
+     ""
+    ]
+   ]
+  },
+  {
+   "word": "ثَلَاثَةً",
+   "atoms": [
+    "ثَ",
+    "لَ",
+    "اْ",
+    "ثَ",
+    "تَ",
+    "نْ"
+   ],
+   "integer": 41858917853976458992900,
+   "residue": [
+    [
+     "SUKUN",
+     2,
+     ""
+    ]
+   ]
+  },
+  {
+   "word": "ثَلَاثَةٌ",
+   "atoms": [
+    "ثَ",
+    "لَ",
+    "اْ",
+    "ثَ",
+    "تُ",
+    "نْ"
+   ],
+   "integer": 41858917887539939112486,
+   "residue": [
+    [
+     "SUKUN",
+     2,
+     ""
+    ]
+   ]
+  },
+  {
+   "word": "ثَلَاثَةٍ",
+   "atoms": [
+    "ثَ",
+    "لَ",
+    "اْ",
+    "ثَ",
+    "تِ",
+    "نْ"
+   ],
+   "integer": 41858917921103419245528,
+   "residue": [
+    [
+     "SUKUN",
+     2,
+     ""
+    ]
+   ]
+  },
+  {
+   "word": "ثَلَاثَةَ",
+   "atoms": [
+    "ثَ",
+    "لَ",
+    "اْ",
+    "ثَ",
+    "تَ"
+   ],
+   "integer": 3110799482883434475,
+   "residue": [
+    [
+     "SUKUN",
+     2,
+     ""
+    ]
+   ]
+  },
+  {
+   "word": "ثَلَاثَةُ",
+   "atoms": [
+    "ثَ",
+    "لَ",
+    "اْ",
+    "ثَ",
+    "تُ"
+   ],
+   "integer": 3110799485377747801,
+   "residue": [
+    [
+     "SUKUN",
+     2,
+     ""
+    ]
+   ]
+  },
+  {
+   "word": "ثَلَاثَةِ",
+   "atoms": [
+    "ثَ",
+    "لَ",
+    "اْ",
+    "ثَ",
+    "تِ"
+   ],
+   "integer": 3110799487872061128,
+   "residue": [
+    [
+     "SUKUN",
+     2,
+     ""
+    ]
+   ]
+  },
+  {
+   "word": "لِسُنَّةِ",
+   "atoms": [
+    "لِ",
+    "سُ",
+    "نْ",
+    "نَ",
+    "تِ"
+   ],
+   "integer": 136950857028806900640,
+   "residue": []
+  },
+  {
+   "word": "لِسُنَّتِ",
+   "atoms": [
+    "لِ",
+    "سُ",
+    "نْ",
+    "نَ",
+    "تِ"
+   ],
+   "integer": 136950857045356876897,
+   "residue": []
+  },
+  {
+   "word": "تَجِدَ",
+   "atoms": [
+    "تَ",
+    "جِ",
+    "دَ"
+   ],
+   "integer": 7606069453,
+   "residue": []
+  },
+  {
+   "word": "بِمَنِ",
+   "atoms": [
+    "بِ",
+    "مَ",
+    "نِ"
+   ],
+   "integer": 5520850660,
+   "residue": []
+  },
+  {
+   "word": "بِمَنْ",
+   "atoms": [
+    "بِ",
+    "مَ",
+    "نْ"
+   ],
+   "integer": 5520955740,
+   "residue": []
+  },
+  {
+   "word": "أَعْلَمُ",
+   "atoms": [
+    "ءَ",
+    "عْ",
+    "لَ",
+    "مُ"
+   ],
+   "integer": 3226172120731,
+   "residue": []
+  },
+  {
+   "word": "نَحْنُ",
+   "atoms": [
+    "نَ",
+    "حْ",
+    "نُ"
+   ],
+   "integer": 855581772555,
+   "residue": []
+  }
+ ]
+}

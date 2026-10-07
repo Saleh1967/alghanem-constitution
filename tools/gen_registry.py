@@ -9,6 +9,7 @@
 
 from __future__ import annotations
 
+import ast
 import json
 import sys
 from pathlib import Path
@@ -34,27 +35,30 @@ REASONS = {
 }
 
 
-# --- يُلصق في كلّ gen_registry.py: استخراجُ الدعوى ونوعِ المخالفة وطريقِ العودة لكلّ وحدةٍ معلَّقة ---
-import ast
-
-IO_READ = {"open", "read_text", "read_bytes", "load", "loads", "reader", "DictReader", "stdin", "argv", "input"}
+# --- استخراجُ الدعوى ونوعِ المخالفة وطريقِ العودة لكلّ وحدةٍ معلَّقة ---
+IO_READ = {"open", "read_text", "read_bytes", "load", "loads", "reader", "DictReader", "stdin",
+           "argv", "input"}
 IO_WRITE = {"write_text", "write_bytes", "dump", "dumps", "writer", "print", "stdout"}
 IO_NORM = {"normalize", "decode", "encode"}
 
 READMISSION = {
-    "reads_text": "input only as gate certificates (gate.enter -> atoms -> cells); no bytes read here",
-    "normalizes": "normalization is the gate's residue rules (A116.Residue); map each rule to a named "
-    "residue edit or drop it",
-    "writes_text": "outputs are atoms returned to gate.exit, or generated tables checked with --check",
-    "measures": "re-measure on the corpus certificate deposit (18,179 forms) and a held-out reference",
+    "reads_text": "input only as gate certificates (gate.enter -> atoms -> cells); "
+    "no bytes read here",
+    "normalizes": "normalization is the gate's residue rules (A116.Residue); map each rule to "
+    "a named residue edit or drop it",
+    "writes_text": "outputs are atoms returned to gate.exit, or generated tables checked "
+    "with --check",
+    "measures": "re-measure on the corpus certificate deposit (18,179 forms) and a held-out "
+    "reference",
     "pure": "restate the claim as a Lean theorem on cells + python mirror + conformance table",
-    "lean": "re-prove against A116/SLGE definitions; audit axioms (propext/Classical.choice/Quot.sound)",
+    "lean": "re-prove against A116/SLGE definitions; audit axioms "
+    "(propext/Classical.choice/Quot.sound)",
     "data": "deposit as certificates (bits) with sha256, never as text",
     "script": "replace by a guarded tool reading only deposits; or drop",
 }
 
 
-def profile(path):
+def profile(path: Path) -> tuple[str, list[str], list[str]]:
     """(الدعوى: أوّلُ سطرٍ من وثيقة الوحدة، أنواعُ المخالفة، طريقُ العودة)."""
 
     suf = path.suffix
@@ -71,12 +75,13 @@ def profile(path):
     except (SyntaxError, UnicodeDecodeError):
         return "", ["script"], [READMISSION["script"]]
     doc = (ast.get_docstring(tree) or "").strip().split("\n")[0][:200]
-    kinds = set()
+    kinds: set[str] = set()
     for n in ast.walk(tree):
         name = None
         if isinstance(n, ast.Call):
             f = n.func
-            name = f.id if isinstance(f, ast.Name) else f.attr if isinstance(f, ast.Attribute) else None
+            name = (f.id if isinstance(f, ast.Name) else f.attr if isinstance(f, ast.Attribute)
+                    else None)
         elif isinstance(n, ast.Attribute):
             name = n.attr
         if name in IO_READ:
@@ -117,9 +122,9 @@ def entries() -> list[dict[str, object]]:
 
 def render() -> str:
     units = entries()
-    kinds = {}
+    kinds: dict[str, int] = {}
     for u in units:
-        for k in u["violation"]:
+        for k in list(u["violation"]):  # type: ignore[call-overload]
             kinds[k] = kinds.get(k, 0) + 1
     body = {
         "principle": "suspension without deletion: history stays in git; "

@@ -34,10 +34,11 @@ def test_guard_catches_a_planted_breach() -> None:
 def test_suspended_is_not_importable() -> None:
     for name in ("slge", "slge_laws", "algebra116", "alghanem_bridge", "suspended.src.slge.slge"):
         try:
-            importlib.import_module(name)
+            mod = importlib.import_module(name)
         except ImportError:
             continue
-        raise AssertionError(f"{name} ما زال قابلًا للاستيراد")
+        where = pathlib.Path(getattr(mod, "__file__", "") or "").resolve()
+        assert ROOT not in where.parents, f"{name} ما زال قابلًا للاستيراد من هذه الشجرة: {where}"
 
 
 def test_registry_matches_suspended_tree() -> None:

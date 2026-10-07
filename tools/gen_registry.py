@@ -100,8 +100,8 @@ def profile(path: Path) -> tuple[str, list[str], list[str]]:
 def entries() -> list[dict[str, object]]:
     out: list[dict[str, object]] = []
     for path in sorted(SUSPENDED.rglob("*")):
-        if not path.is_file() or "__pycache__" in path.parts:
-            continue
+        if not path.is_file() or "__pycache__" in path.parts or path == SUSPENDED / "__init__.py":
+            continue  # الحاجبُ نفسُه ليس وحدةً معلَّقة
         rel = path.relative_to(SUSPENDED)
         top = rel.parts[0]
         claim, kinds, readmission = profile(path)

@@ -1,0 +1,227 @@
+{
+  "principle": "suspension without deletion: history stays in git; nothing returns except by re_admit_requires",
+  "sole_entry_exit": "Saleh1967/Alghanem gate.api (enter, exit); here only src/entry.py (certificate atoms -> cells)",
+  "count": 20,
+  "units": [
+    {
+      "path": "suspended/legacy/RecoveryMetric.lean",
+      "previous_path": "legacy/RecoveryMetric.lean",
+      "reason": "legacy bridge/segmenter/codebook checkers reading text outside the gate",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    },
+    {
+      "path": "suspended/legacy/alghanem_bridge.py",
+      "previous_path": "legacy/alghanem_bridge.py",
+      "reason": "legacy bridge/segmenter/codebook checkers reading text outside the gate",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    },
+    {
+      "path": "suspended/legacy/check_codebooks.py",
+      "previous_path": "legacy/check_codebooks.py",
+      "reason": "legacy bridge/segmenter/codebook checkers reading text outside the gate",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    },
+    {
+      "path": "suspended/legacy/seg.py",
+      "previous_path": "legacy/seg.py",
+      "reason": "legacy bridge/segmenter/codebook checkers reading text outside the gate",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    },
+    {
+      "path": "suspended/src/alghanem_bridge.py",
+      "previous_path": "src/alghanem_bridge.py",
+      "reason": "copied SLGE engines reading/normalizing text outside the gate (هي/إن تنهاران؛ الألفُ الخنجريّة تسقط — مقيس); superseded by Saleh1967/Alghanem gate/ and SLGE slge.entry",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    },
+    {
+      "path": "suspended/src/slge/algebra116.py",
+      "previous_path": "src/slge/algebra116.py",
+      "reason": "copied SLGE engines reading/normalizing text outside the gate (هي/إن تنهاران؛ الألفُ الخنجريّة تسقط — مقيس); superseded by Saleh1967/Alghanem gate/ and SLGE slge.entry",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    },
+    {
+      "path": "suspended/src/slge/slge.py",
+      "previous_path": "src/slge/slge.py",
+      "reason": "copied SLGE engines reading/normalizing text outside the gate (هي/إن تنهاران؛ الألفُ الخنجريّة تسقط — مقيس); superseded by Saleh1967/Alghanem gate/ and SLGE slge.entry",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    },
+    {
+      "path": "suspended/src/slge/slge_laws.py",
+      "previous_path": "src/slge/slge_laws.py",
+      "reason": "copied SLGE engines reading/normalizing text outside the gate (هي/إن تنهاران؛ الألفُ الخنجريّة تسقط — مقيس); superseded by Saleh1967/Alghanem gate/ and SLGE slge.entry",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    },
+    {
+      "path": "suspended/src/slge/slge_layers.py",
+      "previous_path": "src/slge/slge_layers.py",
+      "reason": "copied SLGE engines reading/normalizing text outside the gate (هي/إن تنهاران؛ الألفُ الخنجريّة تسقط — مقيس); superseded by Saleh1967/Alghanem gate/ and SLGE slge.entry",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    },
+    {
+      "path": "suspended/src/slge/slge_order.py",
+      "previous_path": "src/slge/slge_order.py",
+      "reason": "copied SLGE engines reading/normalizing text outside the gate (هي/إن تنهاران؛ الألفُ الخنجريّة تسقط — مقيس); superseded by Saleh1967/Alghanem gate/ and SLGE slge.entry",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    },
+    {
+      "path": "suspended/src/slge/slge_phon.py",
+      "previous_path": "src/slge/slge_phon.py",
+      "reason": "copied SLGE engines reading/normalizing text outside the gate (هي/إن تنهاران؛ الألفُ الخنجريّة تسقط — مقيس); superseded by Saleh1967/Alghanem gate/ and SLGE slge.entry",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    },
+    {
+      "path": "suspended/src/slge/slge_reverse.py",
+      "previous_path": "src/slge/slge_reverse.py",
+      "reason": "copied SLGE engines reading/normalizing text outside the gate (هي/إن تنهاران؛ الألفُ الخنجريّة تسقط — مقيس); superseded by Saleh1967/Alghanem gate/ and SLGE slge.entry",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    },
+    {
+      "path": "suspended/src/slge/slge_unicode.py",
+      "previous_path": "src/slge/slge_unicode.py",
+      "reason": "copied SLGE engines reading/normalizing text outside the gate (هي/إن تنهاران؛ الألفُ الخنجريّة تسقط — مقيس); superseded by Saleh1967/Alghanem gate/ and SLGE slge.entry",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    },
+    {
+      "path": "suspended/src/slge/slge_wazun.py",
+      "previous_path": "src/slge/slge_wazun.py",
+      "reason": "copied SLGE engines reading/normalizing text outside the gate (هي/إن تنهاران؛ الألفُ الخنجريّة تسقط — مقيس); superseded by Saleh1967/Alghanem gate/ and SLGE slge.entry",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    },
+    {
+      "path": "suspended/tests/test_bridge.py",
+      "previous_path": "tests/test_bridge.py",
+      "reason": "tests of suspended modules, or expectations derived from the code under test",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    },
+    {
+      "path": "suspended/tests/test_coverage.py",
+      "previous_path": "tests/test_coverage.py",
+      "reason": "tests of suspended modules, or expectations derived from the code under test",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    },
+    {
+      "path": "suspended/tests/test_nadhm.py",
+      "previous_path": "tests/test_nadhm.py",
+      "reason": "tests of suspended modules, or expectations derived from the code under test",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    },
+    {
+      "path": "suspended/tests/test_slge.py",
+      "previous_path": "tests/test_slge.py",
+      "reason": "tests of suspended modules, or expectations derived from the code under test",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    },
+    {
+      "path": "suspended/tools/measure_nadhm.py",
+      "previous_path": "tools/measure_nadhm.py",
+      "reason": "verify_repo ran the suspended engines; measure_nadhm read text directly",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    },
+    {
+      "path": "suspended/tools/verify_repo.py",
+      "previous_path": "tools/verify_repo.py",
+      "reason": "verify_repo ran the suspended engines; measure_nadhm read text directly",
+      "suspended_at": "2026-10-07",
+      "re_admit_requires": [
+        "entry and exit only through the Alghanem gate: cells come from a Certificate (src/entry.py: atoms -> cells), never from text",
+        "tests with expectations independent of the code, mutation-tested (20/20 method)",
+        "ADR recorded in docs/adr/"
+      ]
+    }
+  ]
+}

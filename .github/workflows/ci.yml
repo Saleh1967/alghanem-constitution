@@ -7,5 +7,6 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: python3 tools/verify_repo.py
+      - name: السجلُّ مطابقٌ للشجرة والحارسُ بلا خرق
+        run: python3 tools/gen_registry.py --check && python3 tools/guard.py
       - run: pip install pytest && python3 -m pytest tests/ -q
